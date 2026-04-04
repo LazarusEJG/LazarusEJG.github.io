@@ -1,13 +1,10 @@
-/* ------------------------------
-   GLOBAL STYLES — GRUVBOX GOLD
---------------------------------*/
 :root {
-  --bg: #f2e5bc;          /* Gruvbox light background */
-  --text: #3c3836;        /* Dark warm gray */
-  --accent: #d79921;      /* Gruvbox gold */
-  --accent-light: #ebd49a;/* Soft gold highlight */
-  --card-bg: #fbf1c7;     /* Light cream card background */
-  --card-border: #d5c4a1; /* Warm beige border */
+  --bg: #f2e5bc;          
+  --text: #3c3836;        
+  --accent: #d79921;     
+  --accent-light: #ebd49a;
+  --card-bg: #fbf1c7;     
+  --card-border: #d5c4a1; 
   --section-spacing: 60px;
 }
 
@@ -143,6 +140,34 @@ h2 {
 }
 
 .sketch-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+/* ------------------------------
+   AFFINITY DIAGRAM
+--------------------------------*/
+.affinity-diagram {
+  margin-top: var(--section-spacing);
+}
+
+.affity-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 18px;
+  max-width: 700px;
+  margin-top: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.affity-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.affity-card img {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 12px;
