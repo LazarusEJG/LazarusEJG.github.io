@@ -1,11 +1,156 @@
-
-body {
-    background:rgb(234, 199, 234);
-    font-family: 'Times New Roman', Times, serif;
-    margin: 40px;
+/* ------------------------------
+   GLOBAL STYLES
+--------------------------------*/
+:root {
+  --bg: #f5e9ff;
+  --text: #2a2340;
+  --accent: #7b4bff;
+  --accent-light: #c7b3ff;
+  --card-bg: #ffffff;
+  --card-border: #e6d8ff;
+  --section-spacing: 60px;
 }
 
-h1 {
-    color:rgb(146, 141, 91);
-    text-align: center;
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Center content and control width */
+section, header {
+  max-width: 900px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* ------------------------------
+   HERO
+--------------------------------*/
+.hero {
+  text-align: center;
+  padding: 80px 20px 60px;
+}
+
+.hero .name {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: var(--accent);
+}
+
+.hero .tagline {
+  font-size: 1.2rem;
+  color: #4a3d66;
+}
+
+/* ------------------------------
+   SECTION HEADERS
+--------------------------------*/
+h2 {
+  font-size: 1.8rem;
+  margin-top: var(--section-spacing);
+  margin-bottom: 15px;
+  color: var(--accent);
+}
+
+/* ------------------------------
+   ABOUT
+--------------------------------*/
+.about p {
+  max-width: 700px;
+  font-size: 1.1rem;
+}
+
+/* ------------------------------
+   SKILLS
+--------------------------------*/
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  background: var(--accent-light);
+  display: inline-block;
+  padding: 8px 14px;
+  margin: 6px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* ------------------------------
+   PROJECTS
+--------------------------------*/
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.project-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 18px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.project-card h3 {
+  margin: 0 0 8px;
+}
+
+.project-card a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+}
+
+/* ------------------------------
+   SKETCHES
+--------------------------------*/
+.sketch-card img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+/* ------------------------------
+   CONTACT
+--------------------------------*/
+.contact a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* ------------------------------
+   RESPONSIVE TWEAKS
+--------------------------------*/
+@media (max-width: 600px) {
+  .hero .name {
+    font-size: 2.4rem;
+  }
 }
