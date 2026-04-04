@@ -1,13 +1,13 @@
 /* ------------------------------
-   GLOBAL STYLES
+   GLOBAL STYLES — GRUVBOX GOLD
 --------------------------------*/
 :root {
-  --bg: #f5e9ff;
-  --text: #2a2340;
-  --accent: #7b4bff;
-  --accent-light: #c7b3ff;
-  --card-bg: #ffffff;
-  --card-border: #e6d8ff;
+  --bg: #f2e5bc;          /* Gruvbox light background */
+  --text: #3c3836;        /* Dark warm gray */
+  --accent: #d79921;      /* Gruvbox gold */
+  --accent-light: #ebd49a;/* Soft gold highlight */
+  --card-bg: #fbf1c7;     /* Light cream card background */
+  --card-border: #d5c4a1; /* Warm beige border */
   --section-spacing: 60px;
 }
 
@@ -43,7 +43,7 @@ section, header {
 
 .hero .tagline {
   font-size: 1.2rem;
-  color: #4a3d66;
+  color: #7c6f64;
 }
 
 /* ------------------------------
@@ -125,12 +125,27 @@ h2 {
 }
 
 /* ------------------------------
-   SKETCHES
+   SKETCHES — NOW BOXED LIKE PROJECTS
 --------------------------------*/
+.sketch-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 18px;
+  max-width: 600px;
+  margin-top: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sketch-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
 .sketch-card img {
-  width: 50%;
-  max-width: 500px;
+  width: 100%;
   border-radius: 10px;
+  margin-bottom: 12px;
 }
 
 /* ------------------------------
