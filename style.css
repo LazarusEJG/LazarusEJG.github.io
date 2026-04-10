@@ -122,7 +122,7 @@ h2 {
 }
 
 /* ------------------------------
-   SKETCHES — NOW BOXED LIKE PROJECTS
+   SKETCHES
 --------------------------------*/
 .sketch-card {
   background: var(--card-bg);
@@ -176,6 +176,40 @@ h2 {
 .affity-card p {
   font-size: 0.95rem;
 }
+
+/* ------------------------------
+   PAPER PROTOTYPE
+--------------------------------*/
+
+.Paper-Prototype {
+  margin-top: var(--section-spacing);
+}
+
+.P-Prototype-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 18px;
+  max-width: 700px;
+  margin-top: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.P-Prototype-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.P-Prototype-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.P-Prototype-card p {
+  font-size: 0.95rem;
+}
+
 
 /* ------------------------------
    CONTACT
