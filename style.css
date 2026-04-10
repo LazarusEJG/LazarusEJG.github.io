@@ -190,7 +190,7 @@ h2 {
   border: 1px solid var(--card-border);
   border-radius: 12px;
   padding: 18px;
-  max-width: 700px;
+  max-width: 500px;
   margin-top: 20px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -201,7 +201,7 @@ h2 {
 }
 
 .P-Prototype-card img {
-  width: 10%;
+  width: 100%;
   border-radius: 10px;
   margin-bottom: 12px;
 }
