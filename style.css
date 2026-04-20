@@ -17,7 +17,6 @@ body {
   line-height: 1.6;
 }
 
-/* Center content and control width */
 section, header {
   max-width: 900px;
   margin: auto;
@@ -71,6 +70,56 @@ section, header {
   color: var(--accent);
   border-bottom: 2px solid var(--accent);
 }
+
+/* ------------------------------
+   FEATURED PROJECT
+--------------------------------*/
+.featured-project {
+  margin-top: var(--section-spacing);
+}
+
+.featured-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 24px;
+  align-items: center;
+}
+
+.featured-image {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+}
+
+.featured-text {
+  flex: 1;
+  min-width: 260px;
+}
+
+.featured-text h3 {
+  margin-top: 0;
+  color: var(--accent);
+}
+
+.featured-button {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 16px;
+  background: var(--accent);
+  color: var(--bg);
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.featured-button:hover {
+  background: #b57614;
+}
+
 
 /* ------------------------------
    SECTION HEADERS
