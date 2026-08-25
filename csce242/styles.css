@@ -7,16 +7,20 @@ body {
 
 #content {
     background-color: #D9C8BF;
-    width: 55%;
+    width: 30%;
     box-shadow: 5px 5px #242616;
 }
 
-header, main, footer {
+header, footer {
     padding: 0.5%;
 }
 
 header, footer {
     background-color:#A6978A;
+}
+
+main {
+    padding: 10%;
 }
 /* navigation */
 
