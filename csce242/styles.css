@@ -26,12 +26,12 @@ main {
 
 /* navigation */
 
-#link {
+.link {
     text-decoration: none;
     color: #8F9DA6;
 }
 
-#link:hover {
+.link:hover {
     text-decoration: underline;
 }
 
