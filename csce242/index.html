@@ -9,28 +9,43 @@
 
 <body>
     <div id="content">
-        <header>
+        <header id="main-header">
+            <h3>EJ Gordon</h3>
             <h1>CSCE 242 Portfolio Page</h1>
-            <h2>EJ Gordon</h2>
-            <p>csce242 is a class about learning html and web development skills.</p>
+            <h2>csce242 is a class about learning html and web development skills.</h2>
         </header>
         <main>
             <h2>Assginments</h2>
-            <ul>
+            <ul class="columns" id="assignments-list">
                 <li>
-                    <a href="assignments/01html/index.html" class="link">First Assignment</a>
+                    <a href="assignments/01html/index.html" class="link">
+                        <h2>Assignment 1 - Basic HTML</h2>
+                        <img src="images/assignmentonethumb.png" alt="thumbnail for assignment one" class="link-img"/>
+                        <p>This was an assignment on just the basics of HTML and getting used to using it.</p>
+                    </a>
                 </li>
                 <li>
-                    <a href="assignments/02css/index.html" class="link">Second Assignment</a>
+                    <a href="assignments/02css/index.html" class="link">
+                        <h2>Assignment 2 - Basic CSS</h2>
+                        <img src="images/assignmenttwothumb.png" alt="thumbnail for assignment two" />
+                        <p>This was an assignment on the basics of CSS, adding it to a page, and making it look nice with style.</p>
+                    </a>
                 </li>
                 <li>
-                    <a href="assignments/03flex/index.html" class="link">Third Assignment</a>
+                    <a href="assignments/03flex/index.html" class="link">
+                        <h2>Assignment 3 - Flex</h2>
+                        <p>This was an assignment on the basics of using flex to make page layouts.</p>
+                    </a>
                 </li>
             </ul>
             <h2>Projects</h2>
-            <ul>
+            <ul class="columns" id="projects-list">
                 <li>
-                    <a href="projects/part1/proposal.pdf" id="link">Project Part 1 PDF</a>
+                    <a href="projects/part1/proposal.pdf" class="link">
+                        <h2>Project Part 1: Topic Proposal</h2>
+                        <img src="images/projectpartonethumb.png" alt="thumbnail for project part 1: Topic Proposal" />
+                        <p>This is the first project in which we defined our prospective website</p>
+                    </a>
                 </li>
             </ul>
         </main>

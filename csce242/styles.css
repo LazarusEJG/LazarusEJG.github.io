@@ -6,33 +6,48 @@ body {
     color: #242616;
 }
 
-#content {
-    background-color: #D9C8BF;
-    width: 30%;
-    box-shadow: 5px 5px #242616;
-}
 
-header, footer {
+
+header,
+footer {
     padding: 0.5%;
 }
 
-header, footer {
-    background-color:#A6978A;
+header,
+footer {
+    background-color: #D9C8BF;
 }
 
-main {
-    padding: 10%;
+
+#assignments-list, #projects-list {
+list-style-type: none;
+}
+
+
+
+#assignments-list li {
+    background-color: #D9C8BF;
+    box-shadow: 5px 5px #A6978A;
+    margin: 1%;
+    padding: 3%;
+    width: 500px;
+    text-align: left;
+}
+
+#projects-list li {
+    background-color: #D9C8BF;
+    box-shadow: 5px 5px #A6978A;
+    margin: 1%;
+    padding: 3%;
+    width: 500px;
+    text-align: left;
 }
 
 /* navigation */
 
 .link {
     text-decoration: none;
-    color: #8F9DA6;
-}
-
-.link:hover {
-    text-decoration: underline;
+    color: #242616;
 }
 
 /* topography */
@@ -40,3 +55,59 @@ h1 {
     color: #242616;
 }
 
+#main-header h1, h2, p {
+    text-align: center;
+}
+
+#main-header h3 {
+    text-align: left;
+    margin-top: 0;
+}
+
+/* Responisve Design */
+
+@media (max-width:1000px) {
+    #assignments-list, #projects-list {
+        padding-left: 0;
+    }
+
+    #assignments-list li {
+        width: 400px;
+    }
+
+    #projects-list li {
+        width: 400px;
+    }
+}
+
+@media (min-width:1000px) {
+
+    .columns {
+        display: flex;
+    }
+
+    .one {
+        flex:1;
+    }
+
+    .two {
+        flex:2;
+    }
+
+    .three {
+        flex:3;
+    }
+
+    .four {
+        flex:4;
+    }
+
+    .five {
+        flex:5;
+    }
+
+    .six {
+        flex:6;
+    }
+
+}
