@@ -6,7 +6,14 @@ body {
     color: #242616;
 }
 
+#main-header h1, h2, p {
+    text-align: center;
+}
 
+#main-header h3 {
+    text-align: left;
+    margin-top: 0;
+}
 
 header,
 footer {
@@ -18,9 +25,14 @@ footer {
     background-color: #D9C8BF;
 }
 
+#content {
+    width: 80%;
+    margin: auto;
+}
 
 #assignments-list, #projects-list {
 list-style-type: none;
+padding-left: 0;
 }
 
 
@@ -29,18 +41,17 @@ list-style-type: none;
     background-color: #D9C8BF;
     box-shadow: 5px 5px #A6978A;
     margin: 1%;
-    padding: 3%;
+    padding: 2%;
     width: 500px;
-    text-align: left;
+    margin-left: 0;
 }
 
 #projects-list li {
     background-color: #D9C8BF;
     box-shadow: 5px 5px #A6978A;
     margin: 1%;
-    padding: 3%;
+    padding: 2%;
     width: 500px;
-    text-align: left;
 }
 
 /* navigation */
@@ -55,20 +66,17 @@ h1 {
     color: #242616;
 }
 
-#main-header h1, h2, p {
-    text-align: center;
-}
-
-#main-header h3 {
-    text-align: left;
-    margin-top: 0;
-}
 
 /* Responisve Design */
 
-@media (max-width:1000px) {
+@media (max-width:1100px) {
     #assignments-list, #projects-list {
         padding-left: 0;
+        margin:auto;
+    }
+
+    header, footer {
+        width: 418.83px;
     }
 
     #assignments-list li {
@@ -80,7 +88,7 @@ h1 {
     }
 }
 
-@media (min-width:1000px) {
+@media (min-width:1100px) {
 
     .columns {
         display: flex;
