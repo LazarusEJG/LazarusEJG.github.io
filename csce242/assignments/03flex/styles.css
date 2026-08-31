@@ -1,19 +1,109 @@
 /* Structure */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: tan;
+}
 
+#content {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    margin-bottom: 1%;
+    padding-top: 1%;
+    background-color: azure;
+}
+
+.layer-1-item {
+    width: 500px;
+    height: 400px;
+    max-width: 100%;
+    margin-left: 1%;
+    background-color: aliceblue;
+}
+
+#layer-2, #layer-3 {
+    margin-top: 1%;
+}
+
+.layer-body {
+    background-color: aliceblue;
+}
+
+footer {
+    margin-top: 1%;
+    padding: 2%;
+    background-color: cadetblue;
+}
 
 /* Navigation */
 
+#main-nav ul {
+    list-style-type: none;
+    padding-left: 0;
+} 
+
+#sidebar {
+    display: block;
+    background-color: cadetblue;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#main-nav li {
+    background-color: cadetblue;
+    padding: 1%;
+    text-align: center;
+    border-right: 2px solid white;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: indigo;
+}
+
+#sidebar li {
+    text-align: center;
+    padding: 5%;
+    margin-bottom: 1%;
+    background-color: aliceblue;
+}
 
 /* Typography */
 
+#main-header h1 {
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+}
 
 /* Responsive Design */
+@media (max-width:1000px) {
+    #main-nav li {
+        border-right: none;
+        border-bottom: 2px solid white;
+    }
+}
 
 @media (min-width: 1000px) {
     
     .columns {
         display: flex;
     }
+
+    #main-nav li {
+        flex: 1;
+    }
+
 
     .one {
         flex: 1;

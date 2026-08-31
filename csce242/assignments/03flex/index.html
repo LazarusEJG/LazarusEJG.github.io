@@ -1,28 +1,95 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title>Assignment 3</title>
-    </head>
-    <body>
-        <div id="content">
-            <header id="main-header">
-                <nav id="main-nav">
+
+<head>
+    <title>Assignment 3</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div id="content">
+        <header id="main-header">
+            <h1>Layouts With Flex</h1>
+            <nav id="main-nav">
+                <ul class="columns">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Staff</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="layer-1" class="columns">
+                <aside id="sidebar" class="one">
+                    <h3>Sidebar</h3>
                     <ul>
-                        <li><a>Home</a></li>
-                        <li><a>About</a></li>
-                        <li><a>Staff</a></li>
-                        <li><a>Contact Us</a></li>
+                        <li><a href="#">Link one</a></li>
+                        <li><a href="#">Link two</a></li>
+                        <li><a href="#">Link three</a></li>
+                        <li><a href="#">Link four</a></li>
                     </ul>
-                </nav>
+                </aside>
+                <div class="layer-1-item">
+                    <h2>title</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non odio sollicitudin, varius
+                        dolor lacinia, ornare orci. Cras tincidunt ac metus congue fermentum. In sed ligula pulvinar,
+                        tincidunt diam sed, laoreet mi. Ut fringilla, lorem in sagittis dignissim, velit sapien rhoncus
+                        diam, id placerat erat sem vestibulum lacus. Praesent pharetra enim sit amet ipsum posuere
+                        convallis. Aenean vitae tellus elit. Integer porttitor est lectus, id pellentesque urna lacinia
+                        vel. Nullam varius est et quam pellentesque, id cursus elit accumsan. Nulla facilisi.</p>
+                </div>
+                <div class="layer-1-item">
+                    <h2>title</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non odio sollicitudin, varius
+                        dolor lacinia, ornare orci. Cras tincidunt ac metus congue fermentum. In sed ligula pulvinar,
+                        tincidunt diam sed, laoreet mi. Ut fringilla, lorem in sagittis dignissim, velit sapien rhoncus
+                        diam, id placerat erat sem vestibulum lacus. Praesent pharetra enim sit amet ipsum posuere
+                        convallis. Aenean vitae tellus elit. Integer porttitor est lectus, id pellentesque urna lacinia
+                        vel. Nullam varius est et quam pellentesque, id cursus elit accumsan. Nulla facilisi.</p>
+                </div>
+                <div class="layer-1-item">
+                    <h2>title</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non odio sollicitudin, varius
+                        dolor lacinia, ornare orci. Cras tincidunt ac metus congue fermentum. In sed ligula pulvinar,
+                        tincidunt diam sed, laoreet mi. Ut fringilla, lorem in sagittis dignissim, velit sapien rhoncus
+                        diam, id placerat erat sem vestibulum lacus. Praesent pharetra enim sit amet ipsum posuere
+                        convallis. Aenean vitae tellus elit. Integer porttitor est lectus, id pellentesque urna lacinia
+                        vel. Nullam varius est et quam pellentesque, id cursus elit accumsan. Nulla facilisi.</p>
+                </div>
+            </div>
+            <div id="layer-2" class="columns">
+                <img src="images/dummy-image.png" alt="dummy"/>
+                <div class="layer-body">
+                    <h2>title</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non odio sollicitudin, varius
+                        dolor lacinia, ornare orci. Cras tincidunt ac metus congue fermentum. In sed ligula pulvinar,
+                        tincidunt diam sed, laoreet mi. Ut fringilla, lorem in sagittis dignissim, velit sapien rhoncus
+                        diam, id placerat erat sem vestibulum lacus. Praesent pharetra enim sit amet ipsum posuere
+                        convallis. Aenean vitae tellus elit. Integer porttitor est lectus, id pellentesque urna lacinia
+                        vel. Nullam varius est et quam pellentesque, id cursus elit accumsan. Nulla facilisi.</p>
+                </div>
+                <img src="images/dummy-image.png" alt="dummy"/>
+            </div>
+            <div id="layer-3" class="columns">
+                <img src="images/dummy-image.png" alt="dummy"/>
+                <div class="layer-body">
+                    <h2>title</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non odio sollicitudin, varius
+                        dolor lacinia, ornare orci. Cras tincidunt ac metus congue fermentum. In sed ligula pulvinar,
+                        tincidunt diam sed, laoreet mi. Ut fringilla, lorem in sagittis dignissim, velit sapien rhoncus
+                        diam, id placerat erat sem vestibulum lacus. Praesent pharetra enim sit amet ipsum posuere
+                        convallis. Aenean vitae tellus elit. Integer porttitor est lectus, id pellentesque urna lacinia
+                        vel. Nullam varius est et quam pellentesque, id cursus elit accumsan. Nulla facilisi.</p>
+                </div>
+                <img src="images/dummy-image.png" alt="dummy"/>
+            </div>
+        </main>
+        <footer>
+            <p>&copy;ejgordon</p>
+        </footer>
+    </div>
+</body>
 
-            </header>
-            <main>
-
-            </main>
-            <footer>
-                <p>&copy;ejgordon</p>
-            </footer>
-        </div>
-    </body>
 </html>
