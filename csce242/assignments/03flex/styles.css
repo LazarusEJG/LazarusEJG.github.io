@@ -84,7 +84,7 @@ footer p {
 }
 
 /* Responsive Design */
-@media (max-width:1000px) {
+@media (min-width:600px) {
     #main-nav li {
         border-right: none;
         border-bottom: 2px solid white;
