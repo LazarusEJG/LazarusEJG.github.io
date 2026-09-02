@@ -1,10 +1,134 @@
 /* Structures */
 
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+#content {
+    margin: auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#main-header {
+    background-color: black;
+    width: 100%;
+}
+
+#main-header-section {
+    width: 200px;
+}
 
 /* Navigation */
+a {
+    text-decoration: none;
+    color: white;
+}
 
+#bottom-nav, #top-nav {
+    display: none;
+    
+}
+
+#bottom-nav {
+    margin-left: auto;
+    background-color: brown;
+    padding: 0.1px;
+}
+
+#top-nav ul, #bottom-nav ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#top-nav li, #bottom-nav li {
+    padding-left: 1%;
+}
+
+#top-nav li:not(:last-child)::after {
+  content: " | ";
+  color:white;
+}
+
+/* images */
+
+img {
+    max-width: 100%;
+}
 
 /* Topography */
-
+#main-header-section-container h1{
+    color: white;
+    font-family: serif
+}
 
 /* Responsive Desgin */
+
+@media(max-width: 1030px) {
+    .columns {
+        display:flex;
+    }
+
+    .one {
+        flex:1;
+    }
+
+    .two {
+        flex:2;
+    }
+
+    .three {
+        flex:3;
+    }
+
+    .four {
+        flex:4;
+    }
+
+    .five {
+        flex:5;
+    }
+
+    .six {
+        flex:6;
+    }
+}
+
+@media(min-width: 1030px) {
+    .columns {
+        display:flex;
+    }
+
+    #main-header-section-icons a {
+        visibility: hidden;
+    }
+
+    #bottom-nav, #top-nav {
+        display: block;
+    }
+
+    .one {
+        flex:1;
+    }
+
+    .two {
+        flex:2;
+    }
+
+    .three {
+        flex:3;
+    }
+
+    .four {
+        flex:4;
+    }
+
+    .five {
+        flex:5;
+    }
+
+    .six {
+        flex:6;
+    }
+}
