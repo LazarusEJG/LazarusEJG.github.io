@@ -46,20 +46,22 @@ p {
     max-width: 100%;
 }
 
-#assignments-list img,
-#projects-list img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-}
-
 #projects-list li {
     background-color: #D9C8BF;
     box-shadow: 5px 5px #A6978A;
     margin: 1%;
     padding: 2%;
     width: 500px;
+    max-width: 100%;
+}
+
+/* images */
+
+#assignments-list img,
+#projects-list img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 100%;
 }
 
@@ -71,6 +73,7 @@ p {
 }
 
 /* topography */
+
 h1 {
     color: #242616;
 }
