@@ -2,7 +2,7 @@
 
 body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    
+    margin: 0;
 }
 
 #content {
@@ -27,9 +27,8 @@ body {
 
 #main-header-logo {
     margin-right: auto;
-    max-width: 25%;
-    min-width: 25%;
-    padding-left: 2%;
+    max-width: 20%;
+    padding-left: 3%;
     padding-top: 1%;
 }
 
@@ -37,9 +36,18 @@ body {
     color: white;
     font-family: serif;
     padding-right: 2%;
+    margin-top: 0%;
+}
+
+/* hero */
+
+#hero {
+    margin: 0;
+    padding: 0;
 }
 
 /* Navigation */
+
 a {
     text-decoration: none;
     color: white;
@@ -53,7 +61,7 @@ a {
 }
 
 #bottom-nav {
-    background-color: brown;
+    background-color: #75000A;
 }
 
 #top-nav ul, #bottom-nav ul{
@@ -62,23 +70,25 @@ a {
 }
 
 #top-nav ul {
-    padding-top: 1%;
+    padding-top: 0.2%;
+    padding-left: 3%;
+    margin-top: 0;
 }
 
 #bottom-nav ul{
-    padding-right: 2%;
+    padding-right: 3%;
 }
 
 #top-nav li, #bottom-nav li {
-    padding-left: 1%;
+    padding-left: 0%;
 }
 
-#top-nav li:hover:not(:last-child) {
-    background-color: red;
+#top-nav li {
+    padding-right: 1%;
 }
 
 #top-nav li:not(:last-child)::after {
-  content: " | ";
+  content: " |";
   color:white;
 }
 
@@ -92,7 +102,7 @@ a {
 }
 
 #bottom-nav li:hover {
-    background-color: darkred;
+    background-color: #650009;
 }
 
 #top-nav a {
@@ -123,6 +133,7 @@ img {
 
     #main-header-section-container {
         flex-direction: column;
+        position: sticky;
     }
 
     #main-header-section {
@@ -132,7 +143,7 @@ img {
 
     #main-header-section-container h1 {
         padding-bottom: 1%;
-        padding-left: 2%;
+        padding-left: 4%;
         font-size: large;
         order: 3;
         width: 100%;
@@ -174,14 +185,13 @@ img {
 
     #main-header-section-container {
         flex-wrap: wrap;
-        align-items: center;
+        align-items: flex-start;
     }
 
     #main-header-section {
-    transform: scale(1); 
+    transform: scale(1);
+    height: 60px; 
     }
-
-
 
     #main-header-logo {
         padding-top: 0;
