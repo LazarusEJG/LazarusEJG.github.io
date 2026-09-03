@@ -9,6 +9,8 @@ body {
     margin: auto;
 }
 
+/* header */
+
 #main-header {
     background-color: black;
     width: 100%;
@@ -18,9 +20,23 @@ body {
     width: 100%;
 }
 
-#main-header-icons {
-    padding-right: 1%;
+#main-header-section-icons {
+    padding-right: 2%;
     padding-top: 1%;
+}
+
+#main-header-logo {
+    margin-right: auto;
+    max-width: 25%;
+    min-width: 25%;
+    padding-left: 2%;
+    padding-top: 1%;
+}
+
+#main-header-section-container h1{
+    color: white;
+    font-family: serif;
+    padding-left: 1%;
 }
 
 /* Navigation */
@@ -45,8 +61,12 @@ a {
     padding-left: 0;
 }
 
-#bottom-nav ul {
-    margin-left: auto;
+#top-nav ul {
+    padding-top: 1%;
+}
+
+#bottom-nav ul{
+    padding-right: 2%;
 }
 
 #top-nav li, #bottom-nav li {
@@ -75,6 +95,14 @@ a {
     background-color: darkred;
 }
 
+#top-nav a {
+    font-size: x-small;
+}
+
+#bottom-nav a {
+    font-weight: bold;
+    font-size:small;
+}
 
 /* images */
 
@@ -82,25 +110,8 @@ img {
     max-width: 100%;
 }
 
-#main-header-logo {
-    margin-right: auto;
-    width: 25%;
-    padding-left: 1%;
-    padding-top: 1%;
-}
-
 /* Topography */
 
-#main-header-section-container h1{
-    color: white;
-    font-family: serif;
-    padding-left: 1%;
-}
-
-#bottom-nav a {
-    font-weight: bold;
-    font-size:small;
-}
 
 /* Responsive Desgin */
 
@@ -109,9 +120,22 @@ img {
         display:flex;
     }
 
+    #main-header-section-container {
+        flex-direction: column;
+    }
+
+    #main-header-section {
+        flex-direction: row;
+    }
+
     #main-header-section-container h1 {
         padding-bottom: 1%;
+        padding-left: 2%;
         font-size: large;
+    }
+
+    #main-header-section-icons {
+        order: 3;
     }
 
     .one {
@@ -144,16 +168,33 @@ img {
         display:flex;
     }
 
-    #main-header-section-icons a {
-        visibility: hidden;
+    #main-header-section-container {
+        flex-wrap: wrap;
+        align-items: center;
     }
 
-    #bottom-nav, #top-nav {
-        display: block;
+    #main-header-section {
+    width: 60%;
+    }
+
+    #main-header-section-container h1 {
+        align-items: left;
     }
 
     #main-header-logo {
         padding-top: 0;
+    }
+
+    #main-header-section-icons a {
+        visibility: hidden;
+    }
+
+    #bottom-nav ul {
+    justify-content: flex-end;
+    }
+
+    #bottom-nav, #top-nav {
+        display: block;
     }
 
     .one {
