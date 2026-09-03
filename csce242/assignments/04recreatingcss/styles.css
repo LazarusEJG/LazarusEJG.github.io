@@ -7,8 +7,6 @@ body {
 
 #content {
     margin: auto;
-    padding-left: 0;
-    padding-right: 0;
 }
 
 #main-header {
@@ -17,7 +15,12 @@ body {
 }
 
 #main-header-section {
-    width: 200px;
+    width: 100%;
+}
+
+#main-header-icons {
+    padding-right: 1%;
+    padding-top: 1%;
 }
 
 /* Navigation */
@@ -28,13 +31,13 @@ a {
 
 #bottom-nav, #top-nav {
     display: none;
+    width: 100%;
+    position: relative;
     
 }
 
 #bottom-nav {
-    margin-left: auto;
     background-color: brown;
-    padding: 0.1px;
 }
 
 #top-nav ul, #bottom-nav ul{
@@ -42,8 +45,16 @@ a {
     padding-left: 0;
 }
 
+#bottom-nav ul {
+    margin-left: auto;
+}
+
 #top-nav li, #bottom-nav li {
     padding-left: 1%;
+}
+
+#top-nav li:hover:not(:last-child) {
+    background-color: red;
 }
 
 #top-nav li:not(:last-child)::after {
@@ -51,16 +62,44 @@ a {
   color:white;
 }
 
+#bottom-nav li:not(:last-child)::after {
+  content: " V";
+  color:white;
+}
+
+#bottom-nav li {
+    padding: 1.5%;
+}
+
+#bottom-nav li:hover {
+    background-color: darkred;
+}
+
+
 /* images */
 
 img {
     max-width: 100%;
 }
 
+#main-header-logo {
+    margin-right: auto;
+    width: 25%;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
 /* Topography */
+
 #main-header-section-container h1{
     color: white;
-    font-family: serif
+    font-family: serif;
+    padding-left: 1%;
+}
+
+#bottom-nav a {
+    font-weight: bold;
+    font-size:small;
 }
 
 /* Responsive Desgin */
@@ -68,6 +107,11 @@ img {
 @media(max-width: 1030px) {
     .columns {
         display:flex;
+    }
+
+    #main-header-section-container h1 {
+        padding-bottom: 1%;
+        font-size: large;
     }
 
     .one {
@@ -106,6 +150,10 @@ img {
 
     #bottom-nav, #top-nav {
         display: block;
+    }
+
+    #main-header-logo {
+        padding-top: 0;
     }
 
     .one {
