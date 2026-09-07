@@ -9,6 +9,28 @@ body {
     margin: auto;
 }
 
+.offset-box-container {
+    position: relative;
+}
+
+.offset-box {
+    position: absolute;
+    top: 280px;
+    background-color: #75000A;
+    padding: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#text-box-1 {
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+#image-section-box {
+    margin: 5%;
+}
+
 /* header */
 
 #main-header {
@@ -30,13 +52,6 @@ body {
     max-width: 20%;
     padding-left: 3%;
     padding-top: 1%;
-}
-
-#main-header-section-container h1{
-    color: white;
-    font-family: serif;
-    padding-right: 2%;
-    margin-top: 0%;
 }
 
 /* hero */
@@ -115,14 +130,72 @@ a {
     font-size:small;
 }
 
+.offset-box button {
+    font-weight: bold;
+    font-size: large;
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 27px;
+    padding-right: 27px;
+}
+
+.offset-box button:hover {
+    background-color: white;
+    color: #75000A;
+}
+
+.offset-box span::after {
+    content: " >>";
+}
+
 /* images */
 
 img {
     max-width: 100%;
 }
 
+.offset-box-container img {
+    min-height: 350px;
+}
+
+#image-section-box img {
+    border-radius: 100%;
+}
+
 /* Topography */
 
+#main-header-section-container h1{
+    color: white;
+    font-family: serif;
+    padding-right: 2%;
+    margin-top: 0%;
+}
+
+.offset-box {
+    color: white;
+}
+
+#text-box-1 {
+    text-align: left;
+    font-weight: bold;
+    font-size: large;
+    text-wrap-mode: wrap;
+    text-wrap-style: pretty;
+}
+
+#image-section-box p {
+    font-size: x-large;
+    text-align: left;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-wrap-mode: wrap;
+    text-wrap-style: pretty;
+    color: #75000A;
+    font-weight: bold;
+}
 
 /* Responsive Desgin */
 
@@ -151,6 +224,18 @@ img {
 
     #main-header-section-icons {
         order: 2;
+    }
+
+    #image-section-box {
+        display: block;
+        margin-top: 250px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    #image-section-box img {
+        margin-left: 50px;
+        margin-right: 50px;
     }
 
     .one {
@@ -207,6 +292,22 @@ img {
 
     #bottom-nav, #top-nav {
         display: block;
+    }
+
+    #text-box-1 {
+    margin-left: 178px;
+    margin-right: 178px;
+    }
+
+    #image-section-box img {
+    min-width: 350px;
+    min-height: 350px;
+    margin-right: 5%;
+    }
+
+    .offset-box {
+        margin-left: 450px;
+        top: 250px;
     }
 
     .one {
