@@ -31,6 +31,31 @@ body {
     margin: 5%;
 }
 
+#section-grid {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#bottom-section {
+    background-color: #EDEDED;
+}
+
+#bottom-section-buttons {
+    margin-left: 6%;
+    margin-right: 5%;
+}
+
+#bottom-section-buttons li {
+    background-color: #75000A;
+    border: 2px solid white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-right: 2%;
+    box-shadow: 0px 0px 5px 0px gray;
+}
+
 /* header */
 
 #main-header {
@@ -44,13 +69,6 @@ body {
 
 #main-header-section-icons {
     padding-right: 2%;
-    padding-top: 1%;
-}
-
-#main-header-logo {
-    margin-right: auto;
-    max-width: 20%;
-    padding-left: 3%;
     padding-top: 1%;
 }
 
@@ -79,7 +97,7 @@ a {
     background-color: #75000A;
 }
 
-#top-nav ul, #bottom-nav ul{
+#top-nav ul, #bottom-nav ul, #section-grid ul, #bottom-section-buttons{
     list-style-type: none;
     padding-left: 0;
 }
@@ -157,12 +175,23 @@ img {
     max-width: 100%;
 }
 
+#main-header-logo {
+    margin-right: auto;
+    max-width: 20%;
+    padding-left: 3%;
+    padding-top: 1%;
+}
+
 .offset-box-container img {
     min-height: 350px;
 }
 
 #image-section-box img {
     border-radius: 100%;
+}
+
+#section-grid img {
+    margin-left: 5.5%;
 }
 
 /* Topography */
@@ -195,6 +224,36 @@ img {
     text-wrap-style: pretty;
     color: #75000A;
     font-weight: bold;
+}
+
+#section-grid h3 {
+    color: #75000A;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#section-grid span::after {
+    content: " >>";
+}
+
+#section-grid p {
+    color: black;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#bottom-section {
+    text-align: center;
+    color: black;
+}
+
+#bottom-section h1 {
+    color: #75000A;
+}
+
+#bottom-section-buttons {
+    font-weight: bold;
+    font-size: small;
 }
 
 /* Responsive Desgin */
@@ -233,9 +292,18 @@ img {
         margin-right: 50px;
     }
 
+    #section-grid ul{
+        display: block;
+        margin-top: 250px;
+    }
+
     #image-section-box img {
         margin-left: 50px;
         margin-right: 50px;
+    }
+
+    #bottom-section {
+        margin-top: 250px;
     }
 
     .one {
@@ -306,8 +374,43 @@ img {
     }
 
     .offset-box {
-        margin-left: 450px;
-        top: 250px;
+        margin-left: 650px;
+        top: 400px;
+    }
+
+    #obc-2 {
+        margin-left: 3%;
+        margin-right: 650px;
+    }
+
+    #obc-3 {
+        margin-left: 3%;
+        margin-right: 900px;
+    }
+
+    #section-grid {
+        margin-top: 5%;
+        margin-left: 11%;
+    }
+
+    #section-grid-items {
+        text-wrap-mode: wrap;
+        text-wrap-style: pretty;
+    }
+
+    #section-grid-items li {
+        margin-right: 3%;
+        max-width: 350px;
+    }
+
+    #section-grid-items img {
+        max-width: 350px;
+        max-height: 350px;
+    }
+
+    #bottom-section-buttons {
+        margin-left: 30%;
+        margin-right: 5%;
     }
 
     .one {
