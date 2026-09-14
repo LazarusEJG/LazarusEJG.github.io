@@ -13,6 +13,52 @@ body {
     margin-right: auto;
 }
 
+#sticker-box {
+    position: relative;
+}
+
+#speech-box {
+    position: relative;
+}
+
+#speech-bubble {
+    visibility: hidden;
+}
+
+#speech-text-container {
+    position:absolute;
+    right: 125px;
+    bottom: 140px;
+    background-color: white;
+    border: 2px solid black;
+    width: 50px;
+    height: 45px;
+    border-radius: 25%;
+}
+
+#speech-tail {
+    position: absolute;
+    right: 115px;
+    bottom: 142px;
+    rotate: 120deg;
+    width: 20px;
+    height: 10px;
+    background-color: white;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-radius: 10%;
+}
+
+/* images */
+
+#sunglasses {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    visibility: hidden;
+}
+
 /* Topography */
 
 body {
