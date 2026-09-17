@@ -11,8 +11,12 @@
         <div id="content">
             <header id="main-header">
                 <h1>JavaScript</h1>
-                <p id="date-display"></p>
                 <nav id="main-nav">
+                    <div id="toggle-nav">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                     <ul class="columns">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="intro.html">Introduction</a></li>
@@ -25,6 +29,7 @@
             </header>
             <main>
                 <h2 id="page-title">Introduction to JavaScript</h2>
+                <p id="date-display"></p>
                 <div class="projects">
                     <section class="project-card">
                         <h3>Button Click</h3>
@@ -33,17 +38,18 @@
                     </section>
                     <section class="project-card">
                         <h3>Link Click</h3>
-                        <p>this is the content</p>
+                        <a href="#" id="link">I'm a link</a>
                     </section>
                     <section class="project-card">
                         <h3>Ball Animation</h3>
-                        <p>this is the content</p>
+                        <button id="btn-bounce">Toggle Bounce</button>
+                        <div id="ball"></div>
                     </section>
                     <section class="project-card">
                         <h3>Plant Health</h3>
                         <input type="number" id="txt-num-days">
-                        <img src="" id="img-plant" class="hidden"/>
-                        <p id="p-plant-message"></p>
+                        <p id="p-plant-msg"></p>
+                        <img src="" id="img-plant" class="hidden">
                     </section>
                     <section class="project-card">
                         <h3>Counter</h3>
