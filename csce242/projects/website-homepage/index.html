@@ -14,8 +14,8 @@
         <div>
             <header id="main-header">
                 <nav class="columns" id="main-nav">
-                    <a href="#" id="logo-text">
-                        <div id="logo-icon">
+                    <a href="#" id="logo-text" class="columns">
+                        <div class="columns" id="logo-icon">
                             <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                                 <rect x="1" y="1" width="4" height="4" fill="white"/>
                                 <rect x="7" y="1" width="4" height="4" fill="white"/>
@@ -35,27 +35,130 @@
             <section id="hero-section">
                 <img src="https://images.unsplash.com/photo-1617293134227-0ec282f3ed89?w=1400&h=600&fit=crop&auto=format" alt="Night cityscape"/>
                 <div id="hero-overlay"></div>
-                <div id="hero-content">
+                <div class="columns" id="hero-content">
                     <p id="hero-label">Personal Collection</p>
                     <h1 id="hero-title">EJ's Anime<br>Database</h1>
                     <p id="hero-sub">A curated personal log of anime, manga, and light novels — rated and ranked.</p>
                 </div>
             </section>
-            <div id="stats-bar">
+            <div class="columns" id="stats-bar">
                 <span id="stats-label">In database</span>
-                <div id="stats-counts">
+                <div id="stats-counts" class="columns">
                     <span class="stat-item"><span id="ani-value"></span> Anime</span>
                     <span class="stat-divider"></span>
                     <span class="stat-item"><span id="manga-value"></span> Manga</span>
                     <span class="stat-divider"></span>
                     <span class="stat-item"><span id="ln-value"></span> Light Novels</span>
                 </div>
-                <span id="stats-total">369 total</span>
+                <span id="stats-total"></span>
             </div>
-            <main>
-                <section>
-
-                </section>
+            <main id="page-home" class="page-content columns">
+                <!-- These will be attatched to js too like the ones above I just have to figure that out lol
+                 depending on plausability the cool bars may or may not be removed idek
+                 just focused on recreating the page for now-->
+                    <aside id="db-stats" class="one">
+                        <p class="section-label">Database Stats</p>
+                        <div class="stat-card violet-card">
+                            <div class="stat-card-header">
+                                <span class="stat-card-label">Anime</span>
+                                <span class="stat-card-total violet">247</span>
+                            </div>
+                            <div class="stat-card-rows">
+                                <div class="stat-card-row">
+                                    <span>Completed</span>
+                                    <div class="bar-wrap"><div class="bar violet-bar" style="width:80%"></div></div>
+                                    <span>198</span>
+                                </div>
+                                <div class="stat-card-row">
+                                    <span>Watching</span>
+                                    <div class="bar-wrap"><div class="bar violet-bar" style="width:5%"></div></div>
+                                    <span>12</span>
+                                </div>
+                                <div class="stat-card-row">
+                                    <span>Plan to Watch</span>
+                                    <div class="bar-wrap"><div class="bar violet-bar" style="width:12%"></div></div>
+                                    <span>29</span>
+                                </div>
+                                <div class="stat-card-row">
+                                    <span>Dropped</span>
+                                    <div class="bar-wrap"><div class="bar violet-bar" style="width:3%"></div></div>
+                                    <span>8</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stat-card sky-card">
+                            <div class="stat-card-header">
+                                <span class="stat-card-label">Manga</span>
+                                <span class="stat-card-total sky">84</span>
+                            </div>
+                            <div class="stat-card-rows">
+                                <div class="stat-card-row">
+                                    <span>Completed</span>
+                                    <div class="bar-wrap"><div class="bar sky-bar" style="width:73%"></div></div>
+                                    <span>61</span>
+                                </div>
+                                <div class="stat-card-row">
+                                    <span>Reading</span>
+                                    <div class="bar-wrap"><div class="bar sky-bar" style="width:11%"></div></div>
+                                    <span>9</span>
+                                </div>
+                                <div class="stat-card-row">
+                                    <span>Plan to Read</span>
+                                    <div class="bar-wrap"><div class="bar sky-bar" style="width:13%"></div></div>
+                                    <span>11</span>
+                                </div>
+                                <div class="stat-card-row">
+                                    <span>Dropped</span>
+                                    <div class="bar-wrap"><div class="bar sky-bar" style="width:4%"></div></div>
+                                    <span>3</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stat-card emerald-card">
+                            <div class="stat-card-header">
+                                <span class="stat-card-label">Light Novels</span>
+                                <span class="stat-card-total emerald">38</span>
+                            </div>
+                            <div class="stat-card-rows">
+                                <div class="stat-card-row">
+                                    <span>Completed</span>
+                                    <div class="bar-wrap"><div class="bar emerald-bar" style="width:76%"></div></div>
+                                    <span>29</span>
+                                </div>
+                                <div class="stat-card-row">
+                                    <span>Reading</span>
+                                    <div class="bar-wrap"><div class="bar emerald-bar" style="width:11%"></div></div>
+                                    <span>4</span>
+                                </div>
+                                <div class="stat-card-row">
+                                    <span>Plan to Read</span>
+                                    <div class="bar-wrap"><div class="bar emerald-bar" style="width:11%"></div></div>
+                                    <span>4</span>
+                                </div>
+                                <div class="stat-card-row">
+                                    <span>Dropped</span>
+                                    <div class="bar-wrap"><div class="bar emerald-bar" style="width:3%"></div></div>
+                                    <span>1</span>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                    <!-- This table should be populated by the database so it'll be empty for now-->
+                    <section id="top-picks" class="three">
+                        <p class="section-label">EJ's Top Picks</p>
+                        <div id="picks-table">
+                            <div class="picks-row picks-header">
+                                <span class="col-rank">#</span>
+                                <span class="col-thumb"></span>
+                                <span class="col-title">Title</span>
+                                <span class="col-type desktop-only">Type</span>
+                                <span class="col-score desktop-only">Score</span>
+                                <span class="col-status desktop-only">Status</span>
+                                <span class="col-score-mobile mobile-only">Score</span>
+                            </div>
+                            <div id="picks-list"></div>
+                        </div>
+                    </section>
             </main>
             <footer>
                 <p>&copy; ejgordon</p>
