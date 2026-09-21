@@ -78,6 +78,32 @@ btnStop.onclick = () =>
 setInterval(()=>{
     const pDisplay = document.getElementById("date-display");
     const today = new Date();
+    const month = today.getMonth()+1;
+    const day = today.getDate();
+    const year = today.getFullYear();
     const seconds = today.getSeconds();
-    pDisplay.innerHTML = seconds;
+    const minutes = today.getMinutes();
+    const hours = today.getHours();
+    pDisplay.innerHTML = `${hours}:${minutes}:${seconds}  ${month}/${day}/${year}`;
 }, 1000);
+
+// togle nav
+const toggleNav = document.getElementById("toggle-nav")
+
+toggleNav.onclick = (e) => {
+    console.log("hello");
+    document.querySelector("#main-nav ul").classList.toggle("hide-small")
+};
+
+//fundraiser
+
+document.getElementById("btn-donation").onclick = (e) => {
+    const GOAL = 10000
+    const donat = parseInt(document.getElementById("txt-donation").value);
+    console.log(document.getElementById("txt-donation").value);
+    document.getElementById("total-donations").innerHTML = donat;
+
+    percent = donat/ GOAL * 100;
+
+    document.querySelector(":root").style.setProperty("--donation", percent + "%")
+}
