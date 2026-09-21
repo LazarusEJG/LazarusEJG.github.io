@@ -1,3 +1,7 @@
+/* font */
+
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
 /* structure */
 
 body {
@@ -6,6 +10,8 @@ body {
     color: white;
     margin: 0%;
 }
+
+/* hero */
 
 #hero-section {
     position: relative;
@@ -40,11 +46,83 @@ body {
     overflow-x: auto;
 }
 
+/* logo */
+
+#logo-icon {
+    width: 24px;
+    height: 24px;
+    background-color: #7c3aed;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* stats bar */
+
+#stats-bar {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    border-top: 1px solid #1e1e35;
+    border-bottom: 1px solid #1e1e35;
+    background-color: #0f0f1c;
+    padding: 10px 20px;
+    overflow-x: auto;
+}
+
+#stats-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.625rem;
+    color: #6e6b8f;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    flex-shrink: 0;
+}
+
+#stats-counts {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.6875rem;
+    color: #6e6b8f;
+}
+
+.stat-value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.stat-divider {
+    width: 1px;
+    height: 14px;
+    background-color: #1e1e35;
+    flex-shrink: 0;
+}
+
+#stats-total {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.625rem;
+    color: #6e6b8f;
+    margin-left: auto;
+    flex-shrink: 0;
+}
+
 /* images */
 
 img {
     max-width: 100%;
 }
+
+/* hero img */
 
 #hero-section img {
     position: absolute;
@@ -113,9 +191,29 @@ img {
 
 /* topography */
 
-#logo-text h2:hover {
-    color: #7C3AED;
+/* logo */
+
+#logo-text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
 }
+
+#logo-text h2 {
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin: 0;
+    color: white;
+    transition: color 0.2s;
+}
+
+#logo-text:hover h2 {
+    color: #a78bfa;
+}
+
+/* hero */
 
 #hero-label {
     font-family: 'JetBrains Mono', monospace;
@@ -143,8 +241,23 @@ img {
     margin: 0;
 }
 
+/* stats bar */
+
 #ani-value, #manga-value, #ln-value {
     margin-left: 3px;
+}
+
+#ani-value {
+    font-weight: bold;
+    color: #7c3aed;
+}
+#manga-value {
+    font-weight: bold;
+    color: #10b981; 
+}
+#ln-value {
+    font-weight: bold;
+    color: #0ea5e9;
 }
 
 /* Responisve Design */

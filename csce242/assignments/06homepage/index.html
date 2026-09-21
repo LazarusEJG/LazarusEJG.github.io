@@ -2,6 +2,10 @@
 
 <html>
     <head>
+        <!--
+        Written by EJ Gordon
+        Designed by EJ Gordon
+        -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css"/>
         <title>EJ's ANIDB</title>
@@ -10,14 +14,21 @@
         <div>
             <header id="main-header">
                 <nav class="columns" id="main-nav">
-                    <a href="#" id="logo-text" data-nav="home">
+                    <a href="#" id="logo-text">
+                        <div id="logo-icon">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                <rect x="1" y="1" width="4" height="4" fill="white"/>
+                                <rect x="7" y="1" width="4" height="4" fill="white"/>
+                                <rect x="4" y="7" width="4" height="4" fill="white"/>
+                            </svg>
+                        </div>
                         <h2>EJ's ANIDB</h2>
                     </a>
                     <ul class="columns" id="nav-links">
-                        <li><a href="#" data-nav="home" class="nav-link active">Home</a></li>
-                        <li><a href="#" data-nav="anime" class="nav-link">Anime</a></li>
-                        <li><a href="#" data-nav="manga" class="nav-link">Manga</a></li>
-                        <li><a href="#" data-nav="ln" class="nav-link">Light Novels</a></li>
+                        <li><a href="#" class="nav-link active">Home</a></li>
+                        <li><a href="#" class="nav-link">Anime</a></li>
+                        <li><a href="#" class="nav-link">Manga</a></li>
+                        <li><a href="#" class="nav-link">Light Novels</a></li>
                     </ul>
                 </nav>
             </header>
@@ -30,11 +41,16 @@
                     <p id="hero-sub">A curated personal log of anime, manga, and light novels — rated and ranked.</p>
                 </div>
             </section>
-            <div class="columns" id="hero-stats">
-                <h5>IN DATABASE</h5>
-                <span class="columns"><p id="ani-value">100</p><p> Anime</p></span>
-                <span class="columns"><p id="manga-value">10</p><p> Manga</p></span>
-                <span class="columns"><p id="ln-value">1</p><p> Light Novels</p></span>
+            <div id="stats-bar">
+                <span id="stats-label">In database</span>
+                <div id="stats-counts">
+                    <span class="stat-item"><span id="ani-value"></span> Anime</span>
+                    <span class="stat-divider"></span>
+                    <span class="stat-item"><span id="manga-value"></span> Manga</span>
+                    <span class="stat-divider"></span>
+                    <span class="stat-item"><span id="ln-value"></span> Light Novels</span>
+                </div>
+                <span id="stats-total">369 total</span>
             </div>
             <main>
                 <section>
