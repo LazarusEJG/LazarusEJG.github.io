@@ -29,14 +29,14 @@ p {
 
 
 #assignments-list,
-#projects-list {
+#projects-list, #assignments-list-2 {
     list-style-type: none;
     padding-left: 0;
 }
 
 
 
-#assignments-list li {
+#assignments-list li, #assignments-list-2 li {
     background-color: #D9C8BF;
     box-shadow: 5px 5px #A6978A;
     margin: 1%;
@@ -58,7 +58,7 @@ p {
 /* images */
 
 #assignments-list img,
-#projects-list img {
+#projects-list img, #assignments-list-2 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -84,14 +84,14 @@ h1 {
 @media (max-width:1100px) {
 
     #assignments-list,
-    #projects-list {
+    #projects-list, #assignments-list-2 {
         padding-left: 0;
         margin: auto;
         max-width: 100%;
     }
 
 
-    #assignments-list li, #projects-list li {
+    #assignments-list li, #projects-list li, #assignments-list-2 li {
         box-shadow: none;
         width: 90%;
         margin: none;
