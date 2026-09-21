@@ -15,17 +15,23 @@
             <h2>Conditionals</h2>
             <nav class="columns" id="menu">
                 <p>
-                    <p class="inner-item">Exercise 1</p><p>Exercise 2</p>
+                    <p class="inner-item" id="btn-one">Exercise 1</p><p id="btn-two">Exercise 2</p>
                 </p>
             </nav>
         </header>
         <main>
             <section class="columns" id="box-container">
-                <div class="boxes" id="exercise-one">
+                <div class="boxes hidden" id="exercise-one">
                     <h3>Missing Class Point Deductions</h3>
+                    <p>How many days do you intend to miss class?</p>
+                    <input id="ms-day" type="number">
+                    <p id="ms-msg"></p>
+                    <p id="ms-msg-2"></p>
                 </div>
-                <div class="boxes" id=exercise-two>
+                <div class="boxes hidden" id=exercise-two>
                     <h3>End of Semester Counter</h3>
+                    <p>You have <span id="EOS-day"></span> days left in the semester.</p>
+                    <p id="EOS-msg"></p>
                 </div>
             </section>
         </main>

@@ -37,7 +37,11 @@ body {
     content: "    |";
 }
 
+/* hidden */
 
+.hidden {
+    display: none;
+}
 
 /* Responsive Design */
 
