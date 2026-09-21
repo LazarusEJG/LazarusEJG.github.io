@@ -1,3 +1,12 @@
+document.getElementById("menu-tab").onclick = () => {
+    if (document.getElementById("menu-tab").innerHTML == "v") {
+        document.getElementById("menu-tab").innerHTML = "^"
+    } else if (document.getElementById("menu-tab").innerHTML = "^") {
+        document.getElementById("menu-tab").innerHTML = "v";
+    }
+    document.getElementById("menu").classList.toggle("hidden");
+}
+
 document.getElementById("btn-one").onclick = () => {
     document.getElementById("exercise-one").classList.toggle("hidden")
 }
@@ -21,9 +30,6 @@ if (mClass > 6) {
 }
 document.getElementById("ms-msg").innerHTML = `You will miss ${percentMissed}% of your grade.`
 })
-
-
-
 
 const endDate = new Date("Dec 4, 2026 23:59:59")
 

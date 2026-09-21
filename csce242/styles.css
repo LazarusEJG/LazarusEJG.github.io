@@ -16,17 +16,6 @@ footer {
     background-color: #D9C8BF;
 }
 
-#main-header h1,
-h2,
-p {
-    text-align: center;
-}
-
-#main-header h3 {
-    text-align: left;
-    margin-top: 0;
-}
-
 
 #assignments-list,
 #projects-list, #assignments-list-2 {
@@ -76,6 +65,17 @@ p {
 
 h1 {
     color: #242616;
+}
+
+#main-header h1,
+h2,
+p {
+    text-align: center;
+}
+
+#main-header h3 {
+    text-align: left;
+    margin-top: 0;
 }
 
 

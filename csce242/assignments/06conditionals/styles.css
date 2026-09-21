@@ -25,16 +25,8 @@ body {
 
 /* Navigation */
 
-#menu {
-    margin-left: 42%;
-}
-
 #menu p {
     margin-left: 1%;
-}
-
-#menu .inner-item:not(:last-child)::after {
-    content: "    |";
 }
 
 /* hidden */
@@ -53,6 +45,18 @@ body {
 
     #box-container {
         align-content: space-between;
+    }
+
+    #menu-tab {
+        display: none;
+    }
+
+    #menu {
+        margin-left: 43%;
+    }
+
+    #menu .inner-item:not(:last-child)::after {
+        content: "    |";
     }
 
 }
