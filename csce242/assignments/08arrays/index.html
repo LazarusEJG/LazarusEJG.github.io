@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment five</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1>Assignment 6</h1>
+            <h2>Conditionals</h2>
+            <p id="menu-tab">^</p>
+            <nav class="columns hidden" id="menu">
+                <p>
+                    <p class="inner-item" id="btn-one">Exercise 1</p><p id="btn-two">Exercise 2</p>
+                </p>
+            </nav>
+        </header>
+        <main>
+            <section class="columns" id="box-container">
+                <div class="boxes hidden" id="exercise-one">
+                    <h3>Missing Class Point Deductions</h3>
+                    <p>How many days do you intend to miss class?</p>
+                    <input id="ms-day" type="number">
+                    <p id="ms-msg"></p>
+                    <p id="ms-msg-2"></p>
+                </div>
+                <div class="boxes hidden" id=exercise-two>
+                    <h3>End of Semester Counter</h3>
+                    <p>You have <span id="EOS-day"></span> days left in the semester.</p>
+                    <p id="EOS-msg"></p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy;ejgordon</p>
+        </footer>
+    </div>
+    <script src="scripts/index.js"></script>
+</body>
+
+</html>
