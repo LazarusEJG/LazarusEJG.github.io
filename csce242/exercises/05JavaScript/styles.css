@@ -133,6 +133,11 @@ body {
     padding: 18px;
 }
 
+.error {
+    color: red;
+    font-style: italic;
+}
+
 /* images */
 img {
     max-width:100%;
