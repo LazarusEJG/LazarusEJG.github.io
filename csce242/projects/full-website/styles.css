@@ -282,6 +282,61 @@ footer p {
     color: #f59e0b;
 }
 
+/* mobile menuing */
+
+#hamburger-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    background: none;
+    border: none;
+    color: #6e6b8f;
+    cursor: pointer;
+    padding: 8px;
+    transition: color 0.2s;
+}
+
+#hamburger-btn:hover {
+    color: #e2e0f0;
+}
+
+#mobile-menu {
+    border-top: 1px solid #1e1e35;
+    background-color: rgba(7, 7, 15, 0.97);
+}
+
+/* tags for top picks list */
+
+/* badges */
+
+.badge {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.625rem;
+    padding: 3px 6px;
+    border-radius: 2px;
+    border: 1px solid;
+    display: inline-block;
+}
+
+.badge-anime {
+    color: #a78bfa;
+    background-color: rgba(167, 139, 250, 0.1);
+    border-color: rgba(167, 139, 250, 0.2);
+}
+
+.badge-manga {
+    color: #38bdf8;
+    background-color: rgba(56, 189, 248, 0.1);
+    border-color: rgba(56, 189, 248, 0.2);
+}
+
+.badge-ln {
+    color: #34d399;
+    background-color: rgba(52, 211, 153, 0.1);
+    border-color: rgba(52, 211, 153, 0.2);
+}
+
 /* images */
 
 img {
@@ -351,6 +406,42 @@ img {
 }
 
 #nav-links a.active {
+    color: #a78bfa;
+    background-color: rgba(124, 58, 237, 0.15);
+}
+
+/* mobile menuing */
+
+#mobile-menu ul {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 12px 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+#mobile-menu li {
+    margin: 0;
+}
+
+#mobile-menu a {
+    display: block;
+    padding: 10px 12px;
+    font-size: 0.875rem;
+    color: #6e6b8f;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+#mobile-menu a:hover {
+    color: #e2e0f0;
+    background-color: #0f0f1c;
+}
+
+#mobile-menu a.active {
     color: #a78bfa;
     background-color: rgba(124, 58, 237, 0.15);
 }
@@ -487,6 +578,12 @@ img {
     flex-shrink: 0;
 }
 
+/* hidden */
+
+.hidden {
+    display: none;
+}
+
 /* Responisve Design */
 
 @media (min-width:1100px) {
@@ -541,10 +638,14 @@ img {
     .desktop-only { display: block; }
     .mobile-only  { display: none; }
 
+    #hamburger-btn {
+        display: none;
+    }
+
 }
 
 @media (max-width:1100px) {
-    #main-header {
-        display: none;
+    #nav-links {
+        display: none; 
     }
 }
