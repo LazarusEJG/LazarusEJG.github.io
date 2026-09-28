@@ -1,51 +1,81 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <!--
+
+<head>
+    <!--
         Written by EJ Gordon
         Designed by EJ Gordon
         -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css"/>
-        <title>EJ's ANIDB</title>
-    </head>
-    <body id="content">
-        <div>
-            <header id="main-header">
-                <nav class="columns" id="main-nav">
-                    <a href="#" id="logo-text" class="columns">
-                        <h2>EJ's ANIDB</h2>
-                    </a>
-                    <ul class="columns" id="nav-links">
-                        <li><a href="index.html" class="nav-link">Home</a></li>
-                        <li><a href="#" class="nav-link active">Anime</a></li>
-                        <li><a href="manga.html" class="nav-link">Manga</a></li>
-                        <li><a href="lightnovels.html" class="nav-link">Light Novels</a></li>
-                    </ul>
-                    <button id="hamburger-btn">
-                        <svg id="icon-menu" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                            <path d="M2 4h14M2 9h14M2 14h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                        </svg>
-                        <svg id="icon-close" width="18" height="18" viewBox="0 0 18 18" fill="none" class="hidden">
-                            <path d="M3 3l12 12M15 3L3 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                        </svg>
-                    </button>
-                </nav>
-                <div id="mobile-menu" class="hidden">
-                    <ul>
-                        <li><a href="index.html" data-nav="home" class="mobile-nav-link">Home</a></li>
-                        <li><a href="#" data-nav="anime" class="mobile-nav-link">Anime</a></li>
-                        <li><a href="manga.html" data-nav="manga" class="mobile-nav-link">Manga</a></li>
-                        <li><a href="lightnovels.html" data-nav="ln" class="mobile-nav-link">Light Novels</a></li>
-                    </ul>
-                </div>
-            </header>
-            </main>
-            <footer>
-                <p>&copy; ejgordon</p>
-            </footer>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>EJ's ANIDB</title>
+</head>
+
+<body id="content">
+    <div>
+        <header id="main-header">
+            <nav class="columns" id="main-nav">
+                <a href="index.html" id="logo-text" class="columns">
+                    <h2>EJ's ANIDB</h2>
+                </a>
+                <ul class="columns" id="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link active">Anime</a></li>
+                    <li><a href="manga.html" class="nav-link">Manga</a></li>
+                    <li><a href="lightnovels.html" class="nav-link">Light Novels</a></li>
+                </ul>
+                <button id="hamburger-btn">
+                    <svg id="icon-menu" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path d="M2 4h14M2 9h14M2 14h14" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" />
+                    </svg>
+                    <svg id="icon-close" width="18" height="18" viewBox="0 0 18 18" fill="none" class="hidden">
+                        <path d="M3 3l12 12M15 3L3 15" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" />
+                    </svg>
+                </button>
+            </nav>
+            <div id="mobile-menu" class="hidden">
+                <ul>
+                    <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+                    <li><a href="#" class="mobile-nav-link">Anime</a></li>
+                    <li><a href="manga.html" class="mobile-nav-link">Manga</a></li>
+                    <li><a href="lightnovels.html" class="mobile-nav-link">Light Novels</a></li>
+                </ul>
+            </div>
+        </header>
+        <header class="library-header">
+            <p class="section-label">Library</p>
+            <h1 class="library-title">Anime</h1>
+        </header>
+        <div class="filter-bar">
+            <button class="filter-btn active" type="button">All</button>
+            <button class="filter-btn" type="button">Completed</button>
+            <button class="filter-btn" type="button">Reading</button>
+            <button class="filter-btn" type="button">Plan to Read</button>
+            <button class="filter-btn" type="button">Dropped</button>
+            <span class="filter-count">1 entries</span>
         </div>
-        <script src="scripts/anime.js"></script>
-    </body>
+        <section class="library-grid">
+            <a class="library-card" href="/selected.html">
+                <div class="card-cover-wrap">
+                    <img src="https://images.unsplash.com/photo-1780871766050-d7db65bc618f?w=480&h=680&fit=crop&auto=format" alt="Fullmetal Alchemist: Brotherhood cover" />
+                    <div class="card-score-overlay"><span class="violet">10.0</span>
+                </div>
+                    <span class="card-status-tag">Completed</span>
+                </div>
+                <div class="card-info">
+                    <p>Fullmetal Alchemist: Brotherhood</p><small>2009 · 64 ep</small>
+                </div>
+            </a>
+        </section>
+        </main>
+        <footer>
+            <p>&copy; ejgordon</p>
+        </footer>
+    </div>
+    <script src="scripts/anime.js"></script>
+</body>
+
 </html>
