@@ -73,7 +73,7 @@ class Titles {
 
   titleCount() {
     const details = document.createElement("small");
-    details.append(`${this.count} · `, this.titleYear());
+    details.append(`${this.count} | `, this.titleYear());
     return details;
   }
 
@@ -112,16 +112,16 @@ class Titles {
 }
 
 const mpTitles = [
-  new Titles("Fullmetal Alchemist: Brotherhood", 2009, "64 ep", "Anime", 10, "Completed", "https://images.unsplash.com/photo-1780871766050-d7db65bc618f?w=60&h=80&fit=crop&auto=format"),
-  new Titles("Steins;Gate", 2011, "24 ep", "Anime", 10, "Completed", "https://images.unsplash.com/photo-1617293134227-0ec282f3ed89?w=60&h=80&fit=crop&auto=format"),
-  new Titles("Vinland Saga", 2019, "48 ep", "Anime", 9.5, "Completed", "https://images.unsplash.com/photo-1586968272237-a3d597214887?w=60&h=80&fit=crop&auto=format"),
-  new Titles("Attack on Titan", 2013, "87 ep", "Anime", 9.5, "Completed", "https://images.unsplash.com/photo-1783937225803-1fad4eb202f5?w=60&h=80&fit=crop&auto=format"),
-  new Titles("Mushishi", 2005, "46 ep", "Anime", 9, "Completed", "https://images.unsplash.com/photo-1556811246-b2d9eb3fbad0?w=60&h=80&fit=crop&auto=format"),
-  new Titles("Berserk", 1989, "364 ch", "Manga", 9, "Reading", "https://images.unsplash.com/photo-1763732397953-7866a2dd8289?w=60&h=80&fit=crop&auto=format"),
-  new Titles("Hunter x Hunter (2011)", 2011, "148 ep", "Anime", 9, "Completed", "https://images.unsplash.com/photo-1770374735069-5acd96acd36b?w=60&h=80&fit=crop&auto=format"),
-  new Titles("Dungeon Meshi", 2014, "97 ch", "Manga", 9, "Completed", "https://images.unsplash.com/photo-1763315371250-4ecc8bcd0638?w=60&h=80&fit=crop&auto=format"),
-  new Titles("Made in Abyss", 2017, "26 ep", "Anime", 8.5, "Completed", "https://images.unsplash.com/photo-1639634252346-0a27c7d168dc?w=60&h=80&fit=crop&auto=format"),
-  new Titles("Re:Zero", 2012, "38 vol", "Light Novel", 8.5, "Reading", "https://images.unsplash.com/photo-1763732397784-c5ff2651d40c?w=60&h=80&fit=crop&auto=format"),
+  new Titles("Vivy -Flourite Eye's Song", 2021, "13 ep", "Anime", 10, "Completed", "images/vivy-thumb.png"),
+  new Titles("So I'm a Spider So what?", 2015, "16 vol", "Light Novel", 10, "Completed", "images/kumodesu-thumb.png"),
+  new Titles("Bleach: Thousand Year Blood War", 2022, "50 ep", "Anime", 10, "Watching", "images/bleachtybw-thumb.png"),
+  new Titles("That Time I got Reincarnated as a Slime", 2015, "146 ch", "Manga", 10, "Reading", "images/tensura-tumb.png"),
+  new Titles("Bleach", 2004, "366 ep", "Anime", 10, "Completed", "images/bleach-thumb.png"),
+  new Titles("Berserk", 1989, "364 ch", "Manga", 9.7, "Reading", "images/berserk-thumb.png"),
+  new Titles("Fullmetal Alchemist: Brotherhood", 2009, "64 ep", "Anime", 9.5, "Completed", "images/fmabrotherhood-thumb.png"),
+  new Titles("Attack on Titan", 2013, "87 ep", "Anime", 9.5, "Completed", "images/aot-thumb.png"),
+  new Titles("Steins;Gate", 2011, "24 ep", "Anime", 8.5, "Completed", "images/steinsgate-thumb.png"),
+  new Titles("Vinland Saga", 2019, "48 ep", "Anime", 8, "Completed", "images/vinlandsaga-thumb.png"),
 ];
 
 const picksTable = document.querySelector("#picks-table");
