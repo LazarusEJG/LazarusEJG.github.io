@@ -5,7 +5,7 @@ document.getElementById("hamburger-btn").onclick = () => {
 }
 
 class Titles {
-  constructor(name, year, count, type, rating, status, cover, href = "/selected.html") {
+  constructor(name, year, count, type, rating, status, cover, href = "selected.html") {
     this.name = name;
     this.year = year;
     this.count = count;

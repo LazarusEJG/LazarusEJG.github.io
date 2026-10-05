@@ -471,6 +471,92 @@ footer p {
     color: #f59e0b; 
 }
 
+/* detail page */
+
+#back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    color: #6e6b8f;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 24px;
+    transition: color 0.15s;
+}
+
+#back-btn:hover {
+    color: #a78bfa;
+}
+
+#detail-card {
+    border: 1px solid #1e1e35;
+    border-radius: 2px;
+    overflow: hidden;
+    background-color: #0f0f1c;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+#detail-cover-wrap {
+    position: relative;
+    background-color: #0a0a16;
+}
+
+#detail-cover {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+}
+
+#detail-score-tag {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: rgba(7, 7, 15, 0.8);
+    backdrop-filter: blur(8px);
+    border: 1px solid #1e1e35;
+    border-radius: 2px;
+    padding: 6px 8px;
+}
+
+#detail-info {
+    display: flex;
+    flex-direction: column;
+}
+
+#detail-title-bar {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 20px 24px;
+    border-bottom: 1px solid #1e1e35;
+}
+
+#detail-data .data-extra {
+    width: 1px;
+    height: 12px;
+    background-color: #1e1e35;
+    flex-shrink: 0;
+}
+
+#detail-synopsis-wrap {
+    padding: 20px 24px;
+    flex: 1;
+}
+
+#detail-synopsis {
+    font-size: 0.875rem;
+    color: #a9a6c8;
+    line-height: 1.7;
+    margin: 0;
+}
+
 /* images */
 
 img {
@@ -761,6 +847,45 @@ a {
     text-transform: uppercase;
     letter-spacing: 0.15em;
     margin: 5px 5px 15px 5px;
+}
+
+/* detail page */
+
+#detail-score-tag span {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    color: #6e6b8f;
+    display: block;
+}
+
+#detail-score-value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #a78bfa;
+    margin: 2px 0 0 0;
+}
+
+#detail-title {
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;
+    line-height: 1.2;
+    margin: 0;
+}
+
+#detail-data {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    color: #6e6b8f;
+    padding: 12px 24px;
+    border-bottom: 1px solid #1e1e35;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+    margin: 0;
 }
 
 /* hidden */
