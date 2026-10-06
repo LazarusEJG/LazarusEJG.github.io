@@ -1,0 +1,134 @@
+[
+    {
+        "name": "Vivy -Flourite Eye's Song",
+        "year": 2021,
+        "count": "13 ep",
+        "type": "Anime",
+        "rating": 10,
+        "status": "Completed",
+        "cover": "images/vivy-thumb.png",
+        "description": "",
+        "href": "selected.html"
+    },
+    {
+        "name": "Bleach: Thousand Year Blood War",
+        "year": 2022,
+        "count": "50 ep",
+        "type": "Anime",
+        "rating": 10,
+        "status": "Watching",
+        "cover": "images/bleachtybw-thumb.png",
+        "description": "",
+        "href": "selected.html"
+    },
+    {
+        "name": "Bleach",
+        "year": 2004,
+        "count": "366 ep",
+        "type": "Anime",
+        "rating": 10,
+        "status": "Completed",
+        "cover": "images/bleach-thumb.png",
+        "description": "",
+        "href": "selected.html"
+    },
+    {
+        "name": "Fullmetal Alchemist: Brotherhood",
+        "year": 2009,
+        "count": "64 ep",
+        "type": "Anime",
+        "rating": 9.5,
+        "status": "Completed",
+        "cover": "images/fmabrotherhood-thumb.png",
+        "description": "",
+        "href": "selected.html"
+    },
+    {
+        "name": "Attack on Titan",
+        "year": 2013,
+        "count": "87 ep",
+        "type": "Anime",
+        "rating": 9.5,
+        "status": "Completed",
+        "cover": "images/aot-thumb.png",
+        "description": "",
+        "href": "selected.html"
+    },
+    {
+        "name": "Steins;Gate",
+        "year": 2011,
+        "count": "24 ep",
+        "type": "Anime",
+        "rating": 8.5,
+        "status": "Completed",
+        "cover": "images/steinsgate-thumb.png",
+        "description": "",
+        "href": "selected.html"
+    },
+    {
+        "name": "Vinland Saga",
+        "year": 2019,
+        "count": "48 ep",
+        "type": "Anime",
+        "rating": 8,
+        "status": "Completed",
+        "cover": "images/vinlandsaga-thumb.png",
+        "description": "",
+        "href": "selected.html"
+    },
+    {
+        "name": "So I'm a Spider So what?",
+        "year": 2015,
+        "count": "16 vol",
+        "type": "Light Novel",
+        "rating": 10,
+        "status": "Completed",
+        "cover": "images/kumodesu-thumb.png",
+        "description": "",
+        "href": "selected.html"
+    },
+    {
+        "name": "Didn't I Say to Make My Abilities Average in the Next Life?!",
+        "year": 2016,
+        "count": "20 vol",
+        "type": "Light Novel",
+        "rating": 8.7,
+        "status": "Reading",
+        "cover": "images/diatmmavnl-thumb.png",
+        "description": "",
+        "href": "selected.html"
+    },
+    {
+        "name": "Arifureta: From Commonplace to World's Strongest",
+        "year": 2015,
+        "count": "13 vol",
+        "type": "Light Novel",
+        "rating": 8.5,
+        "status": "Reading",
+        "cover": "images/arifureta-thumb.png",
+        "description": "",
+        "href": "selected.html"
+    },
+     {
+        "name": "That Time I got Reincarnated as a Slime",
+        "year": 2015,
+        "count": "146 ch",
+        "type": "Manga",
+        "rating": 10,
+        "status": "Reading",
+        "cover": "images/tensura-tumb.png",
+        "description": "",
+        "href": "selected.html"
+    },
+    {
+        "name": "Berserk",
+        "year": 1989,
+        "count": "364 ch",
+        "type": "Manga",
+        "rating": 9.7,
+        "status": "Reading",
+        "cover": "images/berserk-thumb.png",
+        "description": "",
+        "href": "selected.html"
+    }
+]
