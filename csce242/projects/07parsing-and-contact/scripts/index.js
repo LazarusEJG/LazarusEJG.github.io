@@ -1,7 +1,83 @@
-aValue = document.getElementById("ani-value").innerHTML = 100;
-mValue = document.getElementById("manga-value").innerHTML = 50;
-lValue = document.getElementById("ln-value").innerHTML = 20;
-document.getElementById("stats-total").innerHTML = aValue+mValue+lValue+" total";
+const base_url = "https://lazarusejg.github.io/csce242/projects/07parsing-and-contact/json/titles.json";
+
+const getTitles = async () => {
+  const response = await fetch(base_url);
+  return response.json();
+};
+
+const updateAllValues = async () => {
+  await updateAnimeValue();
+  document.getElementById("ani-value").innerHTML = aValue;
+  document.getElementById("anime-stat").innerHTML = aValue;
+  document.getElementById("anime-stat-C").innerHTML = aValueC;
+  document.getElementById("anime-stat-W").innerHTML = aValueW;
+  document.getElementById("anime-stat-P").innerHTML = aValueP;
+  document.getElementById("anime-stat-D").innerHTML = aValueD;
+
+  await updateLightNovelValue();
+  document.getElementById("ln-value").innerHTML = lValue;
+  document.getElementById("lightnovel-stat").innerHTML = lValue;
+  document.getElementById("lightnovel-stat-C").innerHTML = lValueC;
+  document.getElementById("lightnovel-stat-R").innerHTML = lValueR;
+  document.getElementById("lightnovel-stat-P").innerHTML = lValueP;
+  document.getElementById("lightnovel-stat-D").innerHTML = lValueD;
+
+  await updateMangaValue();
+  document.getElementById("manga-value").innerHTML = mValue;
+  document.getElementById("manga-stat").innerHTML = mValue;
+  document.getElementById("manga-stat-C").innerHTML = mValueC;
+  document.getElementById("manga-stat-R").innerHTML = mValueR;
+  document.getElementById("manga-stat-P").innerHTML = mValueP;
+  document.getElementById("manga-stat-D").innerHTML = mValueD;
+
+  document.getElementById("stats-total").innerHTML = aValue + mValue + lValue + " total";
+};
+
+const updateAnimeValue = async () => {
+  const titles = await getTitles();
+  const animeTitles = titles.filter(title => title.type === "Anime");
+  const animeTitlesC = titles.filter(title => title.type === "Anime" && title.status === "Completed");
+  const animeTitlesW = titles.filter(title => title.type === "Anime" && title.status === "Watching");
+  const animeTitlesP = titles.filter(title => title.type === "Anime" && title.status === "Plan to Watch");
+  const animeTitlesD = titles.filter(title => title.type === "Anime" && title.status === "Dropped");
+  aValue = animeTitles.length;
+  aValueC = animeTitlesC.length;
+  aValueW = animeTitlesW.length;
+  aValueP = animeTitlesP.length;
+  aValueD = animeTitlesD.length;
+};
+
+const updateLightNovelValue = async () => {
+  const titles = await getTitles();
+  const lightNoveTitles = titles.filter(title => title.type === "Light Novel");
+  const lightNoveTitlesC = titles.filter(title => title.type === "Light Novel" && title.status === "Completed");
+  const lightNoveTitlesR = titles.filter(title => title.type === "Light Novel" && title.status === "Reading");
+  const lightNoveTitlesP = titles.filter(title => title.type === "Light Novel" && title.status === "Plan to Read");
+  const lightNoveTitlesD = titles.filter(title => title.type === "Light Novel" && title.status === "Dropped");
+  lValue = lightNoveTitles.length;
+  lValueC = lightNoveTitlesC.length;
+  lValueR = lightNoveTitlesR.length;
+  lValueP = lightNoveTitlesP.length;
+  lValueD = lightNoveTitlesD.length;
+};
+
+const updateMangaValue = async () => {
+  const titles = await getTitles();
+  const mangaTitles = titles.filter(title => title.type === "Manga");
+  const mangaTitlesC = titles.filter(title => title.type === "Manga" && title.status === "Completed");
+  const mangaTitlesR = titles.filter(title => title.type === "Manga" && title.status === "Reading");
+  const mangaTitlesP = titles.filter(title => title.type === "Manga" && title.status === "Plan to Read");
+  const mangaTitlesD = titles.filter(title => title.type === "Manga" && title.status === "Dropped");
+  mValue = mangaTitles.length;
+  mValueC = mangaTitlesC.length;
+  mValueR = mangaTitlesR.length;
+  mValueP = mangaTitlesP.length;
+  mValueD = mangaTitlesD.length;
+};
+
+updateAllValues();
+
+
 
 document.getElementById("hamburger-btn").onclick = () => {
     document.getElementById("icon-menu").classList.toggle("hidden")
@@ -10,6 +86,7 @@ document.getElementById("hamburger-btn").onclick = () => {
 }
 
 const topPicksTable = document.getElementById("picks-table")
+
 
 class Titles {
   constructor(name, year, count, type, rating, status, cover, href = "selected.html") {

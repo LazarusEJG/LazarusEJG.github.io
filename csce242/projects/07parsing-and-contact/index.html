@@ -59,7 +59,7 @@
         <div class="columns" id="stats-bar">
             <span id="stats-label">In database</span>
             <div id="stats-counts" class="columns">
-                <span class="stat-item"><span id="ani-value"></span> Anime</span>
+                <span class="stat-item"><span id="ani-value" type="number"></span> Anime</span>
                 <span class="stat-divider"></span>
                 <span class="stat-item"><span id="manga-value"></span> Manga</span>
                 <span class="stat-divider"></span>
@@ -76,7 +76,7 @@
                 <div class="stat-card violet-card">
                     <div class="stat-card-header">
                         <span class="stat-card-label">Anime</span>
-                        <span class="stat-card-total violet">247</span>
+                        <span class="stat-card-total violet" id="anime-stat">247</span>
                     </div>
                     <div class="stat-card-rows">
                         <div class="stat-card-row">
@@ -84,35 +84,35 @@
                             <div class="bar-wrap">
                                 <div class="bar violet-bar" style="width:80%"></div>
                             </div>
-                            <span>198</span>
+                            <span id="anime-stat-C">198</span>
                         </div>
                         <div class="stat-card-row">
                             <span>Watching</span>
                             <div class="bar-wrap">
                                 <div class="bar violet-bar" style="width:5%"></div>
                             </div>
-                            <span>12</span>
+                            <span id="anime-stat-W">12</span>
                         </div>
                         <div class="stat-card-row">
                             <span>Plan to Watch</span>
                             <div class="bar-wrap">
                                 <div class="bar violet-bar" style="width:12%"></div>
                             </div>
-                            <span>29</span>
+                            <span id="anime-stat-P">29</span>
                         </div>
                         <div class="stat-card-row">
                             <span>Dropped</span>
                             <div class="bar-wrap">
                                 <div class="bar violet-bar" style="width:3%"></div>
                             </div>
-                            <span>8</span>
+                            <span id="anime-stat-D">8</span>
                         </div>
                     </div>
                 </div>
                 <div class="stat-card sky-card">
                     <div class="stat-card-header">
                         <span class="stat-card-label">Manga</span>
-                        <span class="stat-card-total sky">84</span>
+                        <span class="stat-card-total sky" id="manga-stat">84</span>
                     </div>
                     <div class="stat-card-rows">
                         <div class="stat-card-row">
@@ -120,35 +120,35 @@
                             <div class="bar-wrap">
                                 <div class="bar sky-bar" style="width:73%"></div>
                             </div>
-                            <span>61</span>
+                            <span id="manga-stat-C">61</span>
                         </div>
                         <div class="stat-card-row">
                             <span>Reading</span>
                             <div class="bar-wrap">
                                 <div class="bar sky-bar" style="width:11%"></div>
                             </div>
-                            <span>9</span>
+                            <span id="manga-stat-R">9</span>
                         </div>
                         <div class="stat-card-row">
                             <span>Plan to Read</span>
                             <div class="bar-wrap">
                                 <div class="bar sky-bar" style="width:13%"></div>
                             </div>
-                            <span>11</span>
+                            <span id="manga-stat-P">11</span>
                         </div>
                         <div class="stat-card-row">
                             <span>Dropped</span>
                             <div class="bar-wrap">
                                 <div class="bar sky-bar" style="width:4%"></div>
                             </div>
-                            <span>3</span>
+                            <span id="manga-stat-D">3</span>
                         </div>
                     </div>
                 </div>
                 <div class="stat-card emerald-card">
                     <div class="stat-card-header">
                         <span class="stat-card-label">Light Novels</span>
-                        <span class="stat-card-total emerald">38</span>
+                        <span class="stat-card-total emerald" id="lightnovel-stat">38</span>
                     </div>
                     <div class="stat-card-rows">
                         <div class="stat-card-row">
@@ -156,28 +156,28 @@
                             <div class="bar-wrap">
                                 <div class="bar emerald-bar" style="width:76%"></div>
                             </div>
-                            <span>29</span>
+                            <span id="lightnovel-stat-C">29</span>
                         </div>
                         <div class="stat-card-row">
                             <span>Reading</span>
                             <div class="bar-wrap">
                                 <div class="bar emerald-bar" style="width:11%"></div>
                             </div>
-                            <span>4</span>
+                            <span id="lightnovel-stat-R">4</span>
                         </div>
                         <div class="stat-card-row">
                             <span>Plan to Read</span>
                             <div class="bar-wrap">
                                 <div class="bar emerald-bar" style="width:11%"></div>
                             </div>
-                            <span>4</span>
+                            <span id="lightnovel-stat-P">4</span>
                         </div>
                         <div class="stat-card-row">
                             <span>Dropped</span>
                             <div class="bar-wrap">
                                 <div class="bar emerald-bar" style="width:3%"></div>
                             </div>
-                            <span>1</span>
+                            <span id="lightnovel-stat-D">1</span>
                         </div>
                     </div>
                 </div>
