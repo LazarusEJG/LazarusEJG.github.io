@@ -100,128 +100,120 @@ document.getElementById("hamburger-btn").onclick = () => {
     document.getElementById("mobile-menu").classList.toggle("hidden")
 }
 
-const topPicksTable = document.getElementById("picks-table")
-
-
-class Titles {
-  constructor(name, year, count, type, rating, status, cover, id, href = `selected.html?id=${this.id}`) {
-    this.name = name;
-    this.year = year;
-    this.count = count;
-    this.type = type;
-    this.rating = rating;
-    this.status = status;
-    this.cover = cover;
-    this.href = href;
-    this.rank = 0;
-    this.id = id;
-  }
-
-  get item() {
-    const a = document.createElement("a");
-    a.classList.add("picks-row", "entry-row", this.rank % 2 === 0 ? "odd" : "even");
-    a.href = this.href;
-    a.append(
-      this.titleRank(),
-      this.titleCover(),
-      this.titleName(),
-      this.titleType(),
-      this.titleRating(),
-      this.titleStatus(),
-      this.titleRating(true),
-    );
-
-    return a;
-  }
-
-  titleRank() {
-    const rank = document.createElement("span");
-    rank.classList.add("col-rank");
-    rank.textContent = String(this.rank).padStart(2, "0");
-    return rank;
-  }
-
-  titleCover() {
-    const thumbnail = document.createElement("span");
-    const image = document.createElement("img");
-    thumbnail.classList.add("col-thumb");
-    image.src = this.cover;
-    image.alt = "";
-    thumbnail.append(image);
-    return thumbnail;
-  }
-
-  titleName() {
-    const title = document.createElement("span");
-    const name = document.createElement("p");
-    title.classList.add("col-title");
-    name.textContent = this.name;
-    title.append(name, this.titleCount());
-    return title;
-  }
-
-  titleYear() {
-    return document.createTextNode(String(this.year));
-  }
-
-  titleCount() {
-    const details = document.createElement("small");
-    details.append(`${this.count} | `, this.titleYear());
-    return details;
-  }
-
-  titleType() {
-    const type = document.createElement("span");
-    const tag = document.createElement("span");
-    const tagClass = {
-      Anime: "tag-anime",
-      Manga: "tag-manga",
-      "Light Novel": "tag-ln",
-    }[this.type];
-
-    type.classList.add("col-type", "desktop-only");
-    tag.classList.add("tag", tagClass);
-    tag.textContent = this.type;
-    type.append(tag);
-    return type;
-  }
-
-  titleRating(mobile = false) {
-    const rating = document.createElement("span");
-    rating.classList.add(mobile ? "col-score-mobile" : "col-score", mobile ? "mobile-only" : "desktop-only");
-    rating.textContent = Number(this.rating).toFixed(1);
-    return rating;
-  }
-
-  titleStatus() {
-    const status = document.createElement("span");
-    status.classList.add("col-status", "desktop-only");
-    if (this.status === "Reading" || this.status === "Watching") {
-      status.classList.add("in-progress");
-    }
-    status.textContent = this.status;
-    return status;
-  }
-}
-
-const mpTitles = [
-  new Titles("Vivy -Flourite Eye's Song", 2021, "13 ep", "Anime", 10, "Completed", "images/vivy-thumb.png", "vivy-flourite-eyes-song"),
-  new Titles("So I'm a Spider So what?", 2015, "16 vol", "Light Novel", 10, "Completed", "images/kumodesu-thumb.png", "so-im-a-spider-so-what"),
-  new Titles("Bleach: Thousand Year Blood War", 2022, "50 ep", "Anime", 10, "Watching", "images/bleachtybw-thumb.png", "bleach-tybw"),
-  new Titles("That Time I got Reincarnated as a Slime", 2015, "146 ch", "Manga", 10, "Reading", "images/tensura-tumb.png", "tensura"),
-  new Titles("Bleach", 2004, "366 ep", "Anime", 10, "Completed", "images/bleach-thumb.png", "bleach"),
-  new Titles("Berserk", 1989, "364 ch", "Manga", 9.7, "Reading", "images/berserk-thumb.png", "berserk"),
-  new Titles("Fullmetal Alchemist: Brotherhood", 2009, "64 ep", "Anime", 9.5, "Completed", "images/fmabrotherhood-thumb.png", "fullmetal-alchemist-brotherhood"),
-  new Titles("Attack on Titan", 2013, "87 ep", "Anime", 9.5, "Completed", "images/aot-thumb.png", "attack-on-titian"),
-  new Titles("Steins;Gate", 2011, "24 ep", "Anime", 8.5, "Completed", "images/steinsgate-thumb.png", "steins-gate"),
-  new Titles("Vinland Saga", 2019, "48 ep", "Anime", 8, "Completed", "images/vinlandsaga-thumb.png", "vinland-saga"),
-];
-
 const picksTable = document.querySelector("#picks-table");
 
-if (picksTable) {
-  mpTitles.forEach((title, index) => {
-    title.rank = index + 1;
-    picksTable.append(title.item);
+const topPickIds = [
+  "vivy-flourite-eyes-song",
+  "so-im-a-spider-so-what",
+  "bleach-tybw",
+  "tensura",
+  "bleach",
+  "berserk",
+  "fullmetal-alchemist-brotherhood",
+  "attack-on-titan",
+  "steins-gate",
+  "vinland-saga",
+];
+
+const titleRank = (title) => {
+  const rank = document.createElement("span");
+  rank.classList.add("col-rank");
+  rank.textContent = String(title.rank).padStart(2, "0");
+  return rank;
+};
+
+const titleCover = (title) => {
+  const thumbnail = document.createElement("span");
+  const image = document.createElement("img");
+  thumbnail.classList.add("col-thumb");
+  image.src = title.cover;
+  image.alt = `${title.name} cover`;
+  thumbnail.append(image);
+  return thumbnail;
+};
+
+const titleYear = (title) => {
+  return document.createTextNode(String(title.year));
+};
+
+const titleCount = (title) => {
+  const details = document.createElement("small");
+  details.append(`${title.count} | `, titleYear(title));
+  return details;
+};
+
+const titleName = (title) => {
+  const wrapper = document.createElement("span");
+  const name = document.createElement("p");
+  wrapper.classList.add("col-title");
+  name.textContent = title.name;
+  wrapper.append(name, titleCount(title));
+  return wrapper;
+};
+
+const titleType = (title) => {
+  const wrapper = document.createElement("span");
+  const tag = document.createElement("span");
+  const tagClass = {
+    Anime: "tag-anime",
+    Manga: "tag-manga",
+    "Light Novel": "tag-ln",
+  }[title.type];
+
+  wrapper.classList.add("col-type", "desktop-only");
+  tag.classList.add("tag", tagClass);
+  tag.textContent = title.type;
+  wrapper.append(tag);
+  return wrapper;
+};
+
+const titleRating = (title, mobile = false) => {
+  const rating = document.createElement("span");
+  rating.classList.add(mobile ? "col-score-mobile" : "col-score", mobile ? "mobile-only" : "desktop-only");
+  rating.textContent = Number(title.rating).toFixed(1);
+  return rating;
+};
+
+const titleStatus = (title) => {
+  const status = document.createElement("span");
+  status.classList.add("col-status", "desktop-only");
+  if (title.status === "Reading" || title.status === "Watching") {
+    status.classList.add("in-progress");
+  }
+  status.textContent = title.status;
+  return status;
+};
+
+const item = (title) => {
+  const a = document.createElement("a");
+  a.classList.add("picks-row", "entry-row", title.rank % 2 === 0 ? "odd" : "even");
+  a.href = `selected.html?id=${title.id}`;
+  a.append(
+    titleRank(title),
+    titleCover(title),
+    titleName(title),
+    titleType(title),
+    titleRating(title),
+    titleStatus(title),
+    titleRating(title, true),
+  );
+  return a;
+};
+
+const showTopPicks = async () => {
+  if (!picksTable) return;
+
+  const titles = await getTitles();
+
+  topPickIds.forEach((id, index) => {
+    const match = titles.find((t) => t.id === id);
+    if (!match) {
+      console.warn(`Top pick id not found in JSON: ${id}`);
+      return;
+    }
+    match.rank = index + 1;
+    picksTable.append(item(match));
   });
-}
+};
+
+showTopPicks();
