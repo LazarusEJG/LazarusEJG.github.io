@@ -18,6 +18,11 @@ const getTitles = async () => {
 const findMatch = async () => {
     titles = await getTitles();
     const match = titles.find(title => title.id === pageid)
+     const tagClass = {
+      Anime: "tag-anime",
+      Manga: "tag-manga",
+      "Light Novel": "tag-ln",
+    }[match.type]
     console.log(match)
     if (match == undefined) {
         window.location.href = "index.html"
@@ -33,7 +38,8 @@ const findMatch = async () => {
         document.getElementById("back-btn").innerHTML = `Back to ${match.type === "Light Novel" ? "Light Novels" : match.type}`;
         document.getElementById("back-btn").href = `${match.type === "Light Novel" ? "lightnovels" : (match.type).toLowerCase()}.html`
     }
-    
+    document.getElementById("detail-tag").classList.add(tagClass)
+    document.getElementById("detail-tag").innerHTML = match.type;
 }
 
 findMatch();
