@@ -492,6 +492,10 @@ footer p {
     color: #a78bfa;
 }
 
+#back-btn::before {
+    content: "<";
+}
+
 #detail-card {
     border: 1px solid #1e1e35;
     border-radius: 2px;
@@ -545,12 +549,12 @@ footer p {
     flex-shrink: 0;
 }
 
-#detail-synopsis-wrap {
+#detail-description-wrap {
     padding: 20px 24px;
     flex: 1;
 }
 
-#detail-synopsis {
+#detail-description {
     font-size: 0.875rem;
     color: #a9a6c8;
     line-height: 1.7;

@@ -21,11 +21,19 @@ const findMatch = async () => {
     console.log(match)
     if (match == undefined) {
         window.location.href = "index.html"
+    } else {
+        document.getElementById("detail-cover").src = match.coverfull;
+        document.getElementById("detail-score-value").innerHTML = match.rating;
+        document.getElementById("detail-title").innerHTML = match.name;
+        document.getElementById("data-year").innerHTML = match.year;
+        document.getElementById("data-count").innerHTML = match.count;
+        document.getElementById("data-status").innerHTML = match.status;
+        document.getElementById("data-genre").innerHTML = match.genre;
+        document.getElementById("detail-description").innerHTML = match.description;
+        document.getElementById("back-btn").innerHTML = `Back to ${match.type === "Light Novel" ? "Light Novels" : match.type}`;
+        document.getElementById("back-btn").href = `${match.type === "Light Novel" ? "lightnovels" : (match.type).toLowerCase()}.html`
     }
+    
 }
 
 findMatch();
-
-
-
-
