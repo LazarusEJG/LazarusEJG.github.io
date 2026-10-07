@@ -7,6 +7,8 @@
         "rating": 10,
         "status": "Completed",
         "cover": "images/vivy-thumb.png",
+        "coverfull": "images/full/vivy-full.png",
+        "genre":"Action, Adventure, Drama, Music, Time-Travel",
         "description": "",
         "href": "selected.html",
         "id": "vivy-flourite-eyes-song"
@@ -19,6 +21,8 @@
         "rating": 10,
         "status": "Watching",
         "cover": "images/bleachtybw-thumb.png",
+        "coverfull": "images/full/bleach-tybw-full.png",
+        "genre":"Action, Adventure, Drama, Shonen",
         "description": "",
         "href": "selected.html",
         "id": "bleach-tybw"
@@ -31,6 +35,8 @@
         "rating": 10,
         "status": "Completed",
         "cover": "images/bleach-thumb.png",
+        "coverfull": "images/full/bleach-full.png",
+        "genre":"Action, Adventure, Drama, Shonen",
         "description": "",
         "href": "selected.html",
         "id": "bleach"
@@ -43,6 +49,8 @@
         "rating": 9.5,
         "status": "Completed",
         "cover": "images/fmabrotherhood-thumb.png",
+        "coverfull": "images/full/fmabrotherhood-full.png",
+        "genre":"Action, Adventure, Drama",
         "description": "",
         "href": "selected.html",
         "id": "fullmeta-alchemist-brotherhood"
@@ -55,6 +63,8 @@
         "rating": 9.5,
         "status": "Completed",
         "cover": "images/aot-thumb.png",
+        "coverfull": "images/full/aot-full.png",
+        "genre":"Action, Adventure, Drama, Shonen",
         "description": "",
         "href": "selected.html",
         "id": "attack-on-titian"
@@ -67,6 +77,8 @@
         "rating": 8.5,
         "status": "Completed",
         "cover": "images/steinsgate-thumb.png",
+        "coverfull": "images/full/seintsgate-full.png",
+        "genre":"Action, Adventure, Drama, Time-Travel",
         "description": "",
         "href": "selected.html",
         "id": "steins-gate"
@@ -79,6 +91,8 @@
         "rating": 8,
         "status": "Completed",
         "cover": "images/vinlandsaga-thumb.png",
+        "coverfull": "images/full/vinlandsaga-full.png",
+        "genre":"Action, Adventure, Drama, Shonen",
         "description": "",
         "href": "selected.html",
         "id": "vinland-saga"
@@ -91,6 +105,8 @@
         "rating": 10,
         "status": "Completed",
         "cover": "images/kumodesu-thumb.png",
+        "coverfull": "images/full/fmabrotherhood-full.png",
+        "genre":"Action, Adventure, Drama, Fantasy, Magic",
         "description": "",
         "href": "selected.html",
         "id": "so-im-a-spider-so-what"
@@ -103,6 +119,8 @@
         "rating": 8.7,
         "status": "Reading",
         "cover": "images/diatmmavnl-thumb.png",
+        "coverfull": "images/full/fmabrotherhood-full.png",
+        "genre":"Action, Adventure, Drama, Fantasy, Magic",
         "description": "",
         "href": "selected.html",
         "id": "distmmaaitnl"
@@ -115,6 +133,8 @@
         "rating": 8.5,
         "status": "Reading",
         "cover": "images/arifureta-thumb.png",
+        "coverfull": "images/full/fmabrotherhood-full.png",
+        "genre":"Action, Adventure, Drama, Shonen, Fantasy, Magic",
         "description": "",
         "href": "selected.html",
         "id": "arifureta-fctws"
@@ -127,6 +147,8 @@
         "rating": 10,
         "status": "Reading",
         "cover": "images/tensura-tumb.png",
+        "coverfull": "images/full/fmabrotherhood-full.png",
+        "genre":"Action, Adventure, Drama, Shonen, Fantasy, Magic",
         "description": "",
         "href": "selected.html",
         "id": "tensura"
@@ -139,6 +161,8 @@
         "rating": 9.7,
         "status": "Reading",
         "cover": "images/berserk-thumb.png",
+        "coverfull": "images/full/fmabrotherhood-full.png",
+        "genre":"Action, Adventure, Drama, Seinen, Fantasy",
         "description": "",
         "href": "selected.html",
         "id": "berserk"
