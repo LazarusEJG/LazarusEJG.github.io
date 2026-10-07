@@ -9,26 +9,41 @@ const updateAllValues = async () => {
   await updateAnimeValue();
   document.getElementById("ani-value").innerHTML = aValue;
   document.getElementById("anime-stat").innerHTML = aValue;
+
   document.getElementById("anime-stat-C").innerHTML = aValueC;
+  document.getElementById("anime-stat-c-bar").style.width = NaN || 0 ? `0%` : `${aValueC / aValue * 100}%`
   document.getElementById("anime-stat-W").innerHTML = aValueW;
+  document.getElementById("anime-stat-w-bar").style.width = NaN || 0 ? `0%` : `${aValueW / aValue * 100}%`
   document.getElementById("anime-stat-P").innerHTML = aValueP;
+  document.getElementById("anime-stat-p-bar").style.width = NaN || 0 ? `0%` : `${aValueP / aValue * 100}%`
   document.getElementById("anime-stat-D").innerHTML = aValueD;
+  document.getElementById("anime-stat-d-bar").style.width = NaN || 0 ? `0%` : `${aValueD / aValue * 100}%`
 
   await updateLightNovelValue();
   document.getElementById("ln-value").innerHTML = lValue;
   document.getElementById("lightnovel-stat").innerHTML = lValue;
+
   document.getElementById("lightnovel-stat-C").innerHTML = lValueC;
+  document.getElementById("lightnovel-stat-c-bar").style.width = NaN || 0 ? `0%` : `${lValueC / lValue * 100}%`
   document.getElementById("lightnovel-stat-R").innerHTML = lValueR;
+  document.getElementById("lightnovel-stat-r-bar").style.width = NaN || 0 ? `0%` : `${lValueR / lValue * 100}%`
   document.getElementById("lightnovel-stat-P").innerHTML = lValueP;
+  document.getElementById("lightnovel-stat-p-bar").style.width = NaN || 0 ? `0%` : `${lValueP / lValue * 100}%`
   document.getElementById("lightnovel-stat-D").innerHTML = lValueD;
+  document.getElementById("lightnovel-stat-d-bar").style.width = NaN || 0 ? `0%` : `${lValueD / lValue * 100}%`
 
   await updateMangaValue();
   document.getElementById("manga-value").innerHTML = mValue;
   document.getElementById("manga-stat").innerHTML = mValue;
+
   document.getElementById("manga-stat-C").innerHTML = mValueC;
+  document.getElementById("manga-stat-c-bar").style.width = NaN || 0 ? `0%` : `${mValueC / mValue * 100}%`
   document.getElementById("manga-stat-R").innerHTML = mValueR;
+  document.getElementById("manga-stat-r-bar").style.width = NaN || 0 ? `0%` : `${mValueR / mValue * 100}%`
   document.getElementById("manga-stat-P").innerHTML = mValueP;
+  document.getElementById("manga-stat-p-bar").style.width = NaN || 0 ? `0%` : `${mValueP / mValue * 100}%`
   document.getElementById("manga-stat-D").innerHTML = mValueD;
+  document.getElementById("manga-stat-d-bar").style.width = NaN || 0 ? `0%` : `${mValueD / mValue * 100}%`
 
   document.getElementById("stats-total").innerHTML = aValue + mValue + lValue + " total";
 };
