@@ -8,7 +8,8 @@
         "status": "Completed",
         "cover": "images/vivy-thumb.png",
         "description": "",
-        "href": "selected.html"
+        "href": "selected.html",
+        "id": "vivy-flourite-eyes-song"
     },
     {
         "name": "Bleach: Thousand Year Blood War",
@@ -19,7 +20,8 @@
         "status": "Watching",
         "cover": "images/bleachtybw-thumb.png",
         "description": "",
-        "href": "selected.html"
+        "href": "selected.html",
+        "id": "bleach-tybw"
     },
     {
         "name": "Bleach",
@@ -30,7 +32,8 @@
         "status": "Completed",
         "cover": "images/bleach-thumb.png",
         "description": "",
-        "href": "selected.html"
+        "href": "selected.html",
+        "id": "bleach"
     },
     {
         "name": "Fullmetal Alchemist: Brotherhood",
@@ -41,7 +44,8 @@
         "status": "Completed",
         "cover": "images/fmabrotherhood-thumb.png",
         "description": "",
-        "href": "selected.html"
+        "href": "selected.html",
+        "id": "fullmeta-alchemist-brotherhood"
     },
     {
         "name": "Attack on Titan",
@@ -52,7 +56,8 @@
         "status": "Completed",
         "cover": "images/aot-thumb.png",
         "description": "",
-        "href": "selected.html"
+        "href": "selected.html",
+        "id": "attack-on-titian"
     },
     {
         "name": "Steins;Gate",
@@ -63,7 +68,8 @@
         "status": "Completed",
         "cover": "images/steinsgate-thumb.png",
         "description": "",
-        "href": "selected.html"
+        "href": "selected.html",
+        "id": "steins-gate"
     },
     {
         "name": "Vinland Saga",
@@ -74,7 +80,8 @@
         "status": "Completed",
         "cover": "images/vinlandsaga-thumb.png",
         "description": "",
-        "href": "selected.html"
+        "href": "selected.html",
+        "id": "vinland-saga"
     },
     {
         "name": "So I'm a Spider So what?",
@@ -85,7 +92,8 @@
         "status": "Completed",
         "cover": "images/kumodesu-thumb.png",
         "description": "",
-        "href": "selected.html"
+        "href": "selected.html",
+        "id": "so-im-a-spider-so-what"
     },
     {
         "name": "Didn't I Say to Make My Abilities Average in the Next Life?!",
@@ -96,7 +104,8 @@
         "status": "Reading",
         "cover": "images/diatmmavnl-thumb.png",
         "description": "",
-        "href": "selected.html"
+        "href": "selected.html",
+        "id": "distmmaaitnl"
     },
     {
         "name": "Arifureta: From Commonplace to World's Strongest",
@@ -107,7 +116,8 @@
         "status": "Reading",
         "cover": "images/arifureta-thumb.png",
         "description": "",
-        "href": "selected.html"
+        "href": "selected.html",
+        "id": "arifureta-fctws"
     },
      {
         "name": "That Time I got Reincarnated as a Slime",
@@ -118,7 +128,8 @@
         "status": "Reading",
         "cover": "images/tensura-tumb.png",
         "description": "",
-        "href": "selected.html"
+        "href": "selected.html",
+        "id": "tensura"
     },
     {
         "name": "Berserk",
@@ -129,6 +140,7 @@
         "status": "Reading",
         "cover": "images/berserk-thumb.png",
         "description": "",
-        "href": "selected.html"
+        "href": "selected.html",
+        "id": "berserk"
     }
 ]

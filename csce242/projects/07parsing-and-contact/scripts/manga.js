@@ -26,7 +26,7 @@ const showTitles = async () => {
 const libraryCard = (title) => {
   const a = document.createElement("a");
   a.classList.add("library-card");
-  a.href = title.href;
+  a.href = `${title.href}?id=${title.id}`;
   a.dataset.status = title.status;
   a.append(cardCoverWrap(title), cardInfo(title));
   return a;
