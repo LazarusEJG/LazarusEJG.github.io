@@ -564,8 +564,8 @@ footer p {
 /* about */
 
 #iframe {
-    width: 720px;
-    height: 500px;
+    width:560px;
+    height: 315px;
     margin-left: auto;
     margin-right: auto;
 }
