@@ -110,7 +110,7 @@ const topPickIds = [
   "bleach",
   "berserk",
   "fullmetal-alchemist-brotherhood",
-  "attack-on-titan",
+  "attack-on-titian",
   "steins-gate",
   "vinland-saga",
 ];
