@@ -584,6 +584,7 @@ footer p {
 
 #about-image-box {
     min-height: 360px;
+    margin-right: 20px;
     background:
         linear-gradient(145deg, rgba(124, 58, 237, 0.14), transparent 58%),
         #0a0a16;
@@ -631,6 +632,7 @@ footer p {
 #about-button {
     display: block;
     padding: 6px 12px;
+    margin-left: 5px;
     font-size: 0.75rem;
     background-color: #07070F;
     color: #6e6b8f;
@@ -1048,6 +1050,10 @@ a {
 
     #hamburger-btn {
         display: none;
+    }
+
+    #about-text-box {
+    max-width: 780px;
     }
 
 }

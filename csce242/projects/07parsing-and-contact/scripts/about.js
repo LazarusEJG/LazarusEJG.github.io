@@ -4,15 +4,19 @@ document.getElementById("hamburger-btn").onclick = () => {
     document.getElementById("mobile-menu").classList.toggle("hidden")
 }
 
-const form = document.getElementById('contact-form').onsubmit = async (e) => {
-    e.preventDefault();
+function wait(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
 
+document.getElementById('contact-form').onsubmit = async(e) => {
+    e.preventDefault();
+    
     const formData = new FormData(e.target);
     formData.append("access_key", "ab7842d4-1956-440f-94e8-fd0b7b0a1f7a");
     const result = document.getElementById("result");
-    result.innerHTML = "sending..."
+    result.innerHTML = "Sending...";
 
-        try {
+    try {
         const response = await fetch("https://api.web3forms.com/submit", {
             method: "POST",
             body: formData
@@ -21,15 +25,19 @@ const form = document.getElementById('contact-form').onsubmit = async (e) => {
         const data = await response.json();
 
         if (response.ok) {
-            result.innerHTML="Success! Your message has been sent.";
+            result.innerHTML = "Message Sent";
+            await wait(2000)
             form.reset();
         } else {
-            alert("Error: " + data.message);
+            result.innerHTML ="Error: " + data.message;
+            await wait(2000)
         }
 
     } catch (error) {
-        result.innerHTML = "Sorry, we couldn't send your message"
+        result.innerHTML = "Sorry, we couldn't send your message";
+        await wait(2000)
     } finally {
+        await wait(2000)
         result.innerHTML = "";
     }
 };
