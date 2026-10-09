@@ -48,37 +48,48 @@
             </div>
         </header>
         <main>
-                    <header class="library-header">
-          <p class="section-label">Profile</p>
-          <h1 class="library-title">About Me</h1>
-        </header>
-        <section id="about-layout">
-          <div class="columns"  id="about-primary">
-            <img id="about-image-box" src="images/profile/profile-image-600x400.jpg"></img>
-            <div id="about-text-box">
-                <h1 class="about-header">Greetings!</h1>
-                <p class="about-text-content">Hello! I'm EJ Gordon. I've watched anime for just about as long as I can remember. From my earlier days of watching classics like Code Geass in a box next to my parent's bed on Netflix, to now with the Crunchyroll subscription I pay for every month to watch the latest series. Over time, I branched out and started reading manga and then light novels too, which led me to make this website as part of my CSCE 242 Web Applications class at the University of South Carolina. I was inspired by probably the most prominent anime database website, MyAnimeList, and decided to make my own kind of database. I hope you enjoy having a look around the site.</p>
-            </div>
-          </div>
-          <div id="about-bottom-box">
-            <h1 class="about-header">Contact Me</h1>
-                <form id="contact-form" action="" method="POST">
-                    <p>
-                        <label class="section-label" for="name">Name:</label>
-                        <input class="about-text-area" type="text" name="name" required>
-                    </p>
-                    <p>
-                        <label class="section-label" for="email">Email:</label>
-                        <input class="about-text-area" type="email" name="email" required>
-                    </p>
-                    <p>
-                        <label class="section-label" for="message">Message:</label>
-                        <textarea class="about-text-area" name="message" required></textarea></p>
-                    <p><button id="about-button" type="submit">Submit</button></p>
-                    <p class="section-label" id="result"></p>
-                </form>
-          </div>
-        </section>
+            <header class="library-header">
+                <p class="section-label">Profile</p>
+                <h1 class="library-title">About Me</h1>
+            </header>
+            <section id="about-layout">
+                <div id="about-top-box">
+                    <iframe id="iframe" src="https://www.youtube.com/watch?v=XnqpbLg8CQk"></iframe>
+                </div>
+                <div class="columns" id="about-primary">
+                    <img id="about-image-box" src="images/profile/profile-image-600x400.jpg"></img>
+                    <div id="about-text-box">
+                        <h1 class="about-header">Greetings!</h1>
+                        <p class="about-text-content">Hello! I'm EJ Gordon. I've watched anime for just about as long as
+                            I can remember. From my earlier days of watching classics like Code Geass in a box next to
+                            my parent's bed on Netflix, to now with the Crunchyroll subscription I pay for every month
+                            to watch the latest series. Over time, I branched out and started reading manga and then
+                            light novels too, which led me to make this website as part of my CSCE 242 Web Applications
+                            class at the University of South Carolina. I was inspired by probably the most prominent
+                            anime database website, MyAnimeList, and decided to make my own kind of database. I hope you
+                            enjoy having a look around the site.</p>
+                    </div>
+                </div>
+                <div id="about-bottom-box">
+                    <h1 class="about-header">Contact Me</h1>
+                    <form id="contact-form" action="" method="POST">
+                        <p>
+                            <label class="section-label" for="name">Name:</label>
+                            <input class="about-text-area" type="text" name="name" required>
+                        </p>
+                        <p>
+                            <label class="section-label" for="email">Email:</label>
+                            <input class="about-text-area" type="email" name="email" required>
+                        </p>
+                        <p>
+                            <label class="section-label" for="message">Message:</label>
+                            <textarea class="about-text-area" name="message" required></textarea>
+                        </p>
+                        <p><button id="about-button" type="submit">Submit</button></p>
+                        <p class="section-label" id="result"></p>
+                    </form>
+                </div>
+            </section>
         </main>
         <footer>
             <p>&copy; ejgordon</p>
